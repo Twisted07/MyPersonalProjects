@@ -5,7 +5,7 @@ This calculator performs basic arithmetic operations - addition, subtraction, mu
 Collects 3 input data - num1, num2 and operator
 Converts num1 and num2 to int
 Checks the type of operator inputed using if
-Prints the answer, else, "Incorrect input, Try again by inputting two numbers with a +, -, * or / operator."
+Prints the answer, else, "Incorrect input, Try again by inputting two numbers with a +, -, *, / or % operator."
 '''
 
 num1, operator, num2 = input("Enter your basic arithmetic below\n").split()
