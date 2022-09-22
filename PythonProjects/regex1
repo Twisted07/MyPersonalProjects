@@ -1,0 +1,6 @@
+
+import re
+x = "Hello world! This is my first regular expression application practice. Today's date is 9/22/2022."
+#Find the date in x and store in y
+y = re.findall('([0-9/]+)', x)
+print(y)
