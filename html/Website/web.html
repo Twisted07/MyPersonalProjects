@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/734c8cbe22.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!------ Header section ------->
+    <section class="header">
+        <nav>
+            <a href="web.html"><img src="eduford_img/logo.png" alt="logo"></a>
+            <div class="navLinks" id="navLink">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>                    
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="textBox">
+            <h1>World's Biggest University</h1>
+            <p>Making websites is now one of the easiest things in the World. 
+                You just need to learn HTML, CSS,<br> JavaScript and you're good to go</p>
+            <a href="" class="heroBtn">Visit Us to Know More</a>
+        </div>
+    </section>
+
+
+    <!----- Course Section ----->
+    <section class="course">
+    </section>
+
+
+    <!----- JavaScript for Toggle Menu ----->
+    <script>
+        var navLink = document.getElementById('navLink');
+
+        function hideMenu() {
+            navLink.style.right = '-200px';
+        }
+        function showMenu() {
+            navLink.style.right = '0';
+        }
+    </script>
+</body>
+</html>
