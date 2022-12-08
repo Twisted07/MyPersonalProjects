@@ -1,0 +1,10 @@
+li {list-style-type: none;}
+a:link {
+    color: brown;
+}
+a:visited {
+    color:blueviolet;
+}
+a:hover {
+    color: aqua;
+}
