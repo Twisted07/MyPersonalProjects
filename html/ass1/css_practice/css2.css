@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.image {
+    background-image:
+    linear-gradient(to bottom, rgba(255, 5, 5, 0.6), rgba(207, 108, 108, 0.6)),
+    url(../Natours/Natours/starter/img/hero.jpg);
+
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 80%, 50% 100%, 25% 80%, 0 100%);
+    position: relative;
+}
+
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+        
+}
+
+.text {
+    color: white;
+    backface-visibility: hidden;
+    margin-bottom: 60px;
+    border: 3px solid black;
+}
+
+.heading-one {
+    letter-spacing: 47px;
+    display: block;
+    font-size: 70px;
+    font-weight: 600;
+    transition: all .5s ease-out;
+
+    animation: moveInTop 5s;
+
+}
+
+.heading-one:hover {
+    font-size: 90px;
+    color: black;
+    text-shadow: 0 10px 20px black;
+    cursor: pointer;
+}
+
+.heading-two {
+    letter-spacing: 21px;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+        font-size: 30px;
+        color: black;
+    }
+
+    60% {
+        font-size: 90px;
+        color: rgb(153, 151, 151);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* Header button */
+.button:link, .button:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+
+.heading-btn {
+    background-color: white;
+    color: black;
+    padding: 20px 40px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgb(73, 70, 70);
+}
+
+.button:active {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px black;
+}

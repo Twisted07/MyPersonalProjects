@@ -1,0 +1,14 @@
+{
+  "name": "alquilar",
+  "version": "1.0.0",
+  "description": "Alquilar Paseo landing page",
+  "main": "index.js",
+  "scripts": {
+    "view": "node-sass sass/main.scss css/alquilar.css -w"
+  },
+  "author": "Twisted",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

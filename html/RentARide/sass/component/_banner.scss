@@ -1,0 +1,14 @@
+.banner {
+    width: 100%;
+    // display: inline-block;
+    // translate: 12% 2rem;
+    background-color: $color-white;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 4rem rgba($color-black, .4);
+    // position: absolute;
+    // bottom: 20vh;
+    // left: 0;
+    transform: translate(0, 50%);
+
+}

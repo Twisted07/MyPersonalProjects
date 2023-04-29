@@ -1,0 +1,106 @@
+.pop-up {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: rgba($color-black, .8);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+
+    &:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+
+    &__content {
+        
+        background-color: $color-white;
+        width: 70%;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(.25);
+        display: table;
+        opacity: 0;
+        overflow: hidden;
+        transition: all .3s .1s;
+
+        @include responsive(tab-port) {
+            width: 50%;
+            border-radius: 3px;
+        }
+    }
+
+    &__left {
+        width: 33.33333%;
+        display: table-cell;
+        
+        @include responsive(tab-port) {
+            display: table-row;
+        }
+
+    }
+
+    &__right {
+        width: 66.66667%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+
+        @include responsive(tab-port) {
+            text-align: center;
+            padding: 3rem 4rem;
+        }
+       
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+
+        @include responsive(tab-port) {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 2px solid $color-grey-light-2;
+        hyphens: auto;
+
+
+        @include responsive(tab-port) {
+            column-count: 1;
+        }
+    }
+
+    &__close {
+        text-decoration: none;
+        position: absolute;
+        top: 3rem;
+        right: 4rem;
+        font-size: 3rem;
+        line-height: 1;
+        color: $color-grey-dark-3;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

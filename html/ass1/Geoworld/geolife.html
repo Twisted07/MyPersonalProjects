@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Life | Homepage</title>
+    <link rel="stylesheet" href="css/icon-styles.css">
+    <link rel="stylesheet" href="css/geolife.css">
+</head>
+<body>
+
+    <main>
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="card">
+                    <div class="card__side card__side--front-portrait">
+                        front
+                    </div>
+                    <div class="card__side card__side--back-portrait card__side--back-portrait-1">
+                        back
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-2-of-4">
+                <div class="card">
+                    <div class="card__side card__side--front-landscape">
+                        front
+                    </div>
+                    <div class="card__side card__side--back-landscape">
+                        back
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="card">
+                    <div class="card__side card__side--front-portrait">
+                        front
+                    </div>
+                    <div class="card__side card__side--back-portrait card__side--back-portrait-2">
+                        back
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="form-section">
+            <div class="row">
+                <form action="#" class="form">
+                    <div class="form__group">
+                        <input type="text" class="form__input" name="name" id="fname" placeholder="full-name" required>
+                        <label for="fname" class="form__label">Full Name</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="email" class="form__input" name="email" id="email" placeholder="email" required>
+                        <label for="email" class="form__label">Email</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="tel" class="form__input" name="phone" id="phone" placeholder="mobile no">
+                        <label for="phone" class="form__label">Mobile No</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="date" class="form__input" name="dob" id="dob" placeholder="date of birth" required>
+                        <label for="dob" class="form__label">Date of Birth</label>
+                    </div>
+
+                    <div class="form__group">
+                        <div class="form__radio u-center-text">
+                            <input type="radio" class="form__radio--input" name="gender" id="male" required>
+                            <label for="male" class="form__radio--label">
+                                <span class="form__radio--button"></span>    
+                                Male
+                            </label>
+                        
+                            <input type="radio" class="form__radio--input" name="gender" id="female" required>
+                            <label for="female" class="form__radio--label">
+                                <span class="form__radio--button"></span>    
+                                Female
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <div class="u-center-text">
+                            <button class="btn btn--white">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <section class="info-section">
+            <div class="row">
+                <form action="#" class="info">
+                    <div class="info__group">
+                        <input type="text" class="info__input" name="full-name" id="name" placeholder="Mike Wilson" required>
+                        <label for="name" class="info__label">Full Name</label>
+                    </div>
+
+                    <div class="info__group">
+                        <input type="email" class="info__input" name="email" id="email" placeholder="mikewilson@gmail.com" required>
+                        <label for="email" class="info__label">Email</label>
+                    </div>
+
+                    <div class="info__group">
+                        <input type="tel" class="info__input" name="phone" id="phone" placeholder="+123456789" required>
+                        <label for="phone" class="info__label">Mobile No</label>
+                    </div>
+
+                    <div class="info__group">
+                        <h6 class="checkbox-header">Choose the subjects you would like to register for this semester:</h6>
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="subject" id="math" value="math">
+                            <label for="math" class="checkbox__label">Math</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="subject" id="english" value="english" checked>
+                            <label for="english" class="checkbox__label">English</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="subject" id="biology" value="biology">
+                            <label for="biology" class="checkbox__label">Biology</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="subject" id="chemistry" value="chemistry">
+                            <label for="chemistry" class="checkbox__label">Chemistry</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="subject" id="physics" value="physics">
+                            <label for="physics" class="checkbox__label">Physics</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="subject" id="government" value="government">
+                            <label for="government" class="checkbox__label">Government</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="subject" id="literature" value="literature">
+                            <label for="literature" class="checkbox__label">Literature</label>
+                        </div>
+
+                        <h6 class="checkbox-header">Have you finished checking all the subjects you'd like to register for?</h6>
+
+                        <div class="radio">
+                            <input type="radio" class="radio__input" name="choice" id="yes" required>
+                            <label for="yes" class="radio__label">Yes</label>
+
+                            <input type="radio" class="radio__input" name="choice" id="no">
+                            <label for="no" class="radio__label">No</label>
+                        </div>
+                    </div>
+                    <div class="u-center-text">
+                        <button class="btn btn--white">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="notification">67</div>
+
+        </section>
+    </main>
+    
+</body>
+</html>

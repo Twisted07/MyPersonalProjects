@@ -1,0 +1,14 @@
+{
+  "name": "rentaride",
+  "version": "1.0.0",
+  "description": "Landing page for rentaride",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/rar.css -w"
+  },
+  "author": "Twisted",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

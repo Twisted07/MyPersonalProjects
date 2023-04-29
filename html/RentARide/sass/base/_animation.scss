@@ -1,0 +1,14 @@
+@keyframes car-fade-in {
+    0% {
+        transform: translate(85%, -25%);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translate(10rem, -25%);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+        }
+                    
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .asphalt {
+            width: 500px;
+            border: 1px solid #333;
+            height: 150px;
+            background-color: #504f4f;
+            position: relative;
+            padding: 5px;
+            /* overflow: hidden; */
+        }
+        .asphalt::after {
+            content: '';
+            position: absolute;
+            top: calc(50% - 3.5px);
+            width: 25px;
+            height: 7px;
+            background-color: #FFFFFF;
+            transition: all .5s;
+            box-shadow: 50px 0px 0px #FFFFFF, 
+                100px 0px 0px #FFFFFF,
+                150px 0px 0px #FFFFFF,
+                200px 0px 0px #FFFFFF,
+                250px 0px 0px #FFFFFF,
+                300px 0px 0px #FFFFFF,
+                350px 0px 0px #FFFFFF,
+                400px 0px 0px #FFFFFF,
+                450px 0px 0px #FFFFFF,
+                500px 0px 0px #FFFFFF;
+                
+            animation: line-move 1s infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes line-move {
+            0% {
+                translate: 0%;
+            }
+            100% {
+                translate: -200%;
+            }
+        }
+        .car {
+            display: none;
+            width: 200px;
+            height: 80px;
+            background-color: rgb(201, 128, 32);
+            translate: 20px -100px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .car__roof {
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(158, 111, 49);
+            margin-left: 20px;
+        }
+
+        .car__windscreen {
+            height: 60px;
+            width: 20px;
+            background-color: rgba(0, 0, 0, .2);
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+        .car__bumper {
+            height: 70px;
+            width: 5px;
+            background-color: rgba(0, 0, 0, .2);
+            border-radius: 5px;
+            position: absolute;
+            right: 3px;
+        }
+        .car__headlight {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, .5);
+            position: absolute;
+            right: 2px;
+            top: 10px;
+            box-shadow: 0px 50px 0px rgba(0, 0, 0, .5), 
+            -185px 0px 0px rgba(250, 0, 0, .5),
+            -185px 50px 0px rgba(250, 0, 0, .5);
+        }
+        .car__headlight::after, .car__headlight::before{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            background-image: linear-gradient(to right, #FFFFFFA0, transparent);
+            top: -15px;
+            clip-path: polygon(0% 50%, 100% 0%, 100% 100% );
+            }
+
+        .car__headlight::before {
+            top: 35px;
+       }
+       .traffic-light {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: green;
+        position: absolute;
+        right: 20px;
+        top: -40px;
+       }
+
+       .traffic-light::after {
+        width: 5px;
+        height: 50px;
+        content: '';
+        position: absolute;
+        top: 22px;
+        left: 10px;
+        background-color: grey;
+        z-index: 100;
+       }
+
+       .traffic-light-control {
+        visibility: hidden;
+       }
+
+       .traffic-light-control:checked + .traffic-light {
+        background-color: red;
+       }
+       .asphalt:has(.traffic-light-control:checked)::after {
+        animation: none;
+       }
+       label {
+        font-size: 16px;
+       }
+</style>
+</head>
+<body>
+    <main>
+        <div class="asphalt">
+            <input id="control" class="traffic-light-control" type="checkbox">
+            <div class="traffic-light"></div>
+        </div>
+        <div class="car">
+            <div class="car__roof"></div>
+            <div class="car__windscreen"></div>
+            <div class="car__bumper"></div>
+            <div class="car__headlight"></div>
+        </div>
+        <label for="control">Stop abeg</label>
+    </main>
+</body>
+</html> 

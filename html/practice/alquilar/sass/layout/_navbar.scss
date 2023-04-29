@@ -1,0 +1,45 @@
+.header {
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: $color-purple-light;
+        padding: 2rem 5rem;
+        align-items: center;
+        position: relative;
+        top: 0;
+        z-index: 10000;
+        
+    
+    
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+        list-style: none;
+    }
+
+    &__items {
+        color: $color-white;
+        font-size: $font-small-1;
+        font-weight: 600;
+
+        &:hover,
+        &:active {
+            color: $color-yellow;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-white;
+        font-size: $font-small-1;
+        font-weight: 600;
+
+        &:hover,
+        &:active {
+            color: $color-yellow;
+        }   
+    }
+}

@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff939;
+    height: 100vh;
+}
+
+/* Holes in spongebob */
+.holes {
+    background-color: #aead0d;
+    display: inline-block;
+}
+
+.pores .circle.small {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: translate(10vw, 23vh);
+
+}
+
+.pores .circle.big {
+    height: 70px;
+    width: 65px;
+    border-radius: 50%;
+    transform: translate(95vw, 20px);
+
+}
+
+.pores .egg-oval.big {
+    height: 130px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+.egg-oval.big.one {
+    transform: translate(-9vw, 30px);
+
+}
+
+.egg-oval.big.two {
+    transform: rotate(25deg) translate(71vw, -5vh);
+}
+
+
+.egg-oval.smallest {
+    height: 50px;
+    width: 45px;
+    border-radius: 50%;
+    transform: translate(70vw, 17vh);
+}
+
+.egg-oval.smaller {
+    height: 60px;
+    width: 53px;
+    border-radius: 50%;
+    transform: translate(-20vw, 55vh);
+}
+
+.pores .oval.big{
+    height: 100px;
+    width: 85px;
+    border-radius: 50%;
+    transform: translate(-10vw, 70vh) rotate(25deg);
+}
+
+.pores .oval.small{
+    height: 80px;
+    width: 65px;
+    border-radius: 50%;
+    transform: translate(40vw, 75vh) rotate(25deg);
+}
+
+/* Sponge bob's eyes */
+
+.face {
+    position: relative;
+}
+
+.eye-white {
+    height: 250px;
+    width: 230px;
+    border: 5px solid black;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    transform: translate(36.8vw, 20%);
+    margin: -4px;
+    position: relative;
+}
+
+
+.eye-blue {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: #26b9c8;
+    border: 5px solid black;
+    display: inline-block;
+
+}
+
+.eye-blue.left {
+    transform: translate(16.2vw, -3vh);
+    position: relative;
+}
+
+.eye-blue.right {
+    transform: translate(19.5vw, -3vh);
+}
+
+.eye-blue.left::after, .eye-blue.right::after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    top: 19%;
+    left: 19%;
+}
+
+.lashes {
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    transform: translate(200%, -29vh);
+    z-index: -1;
+    position: absolute;
+}
+
+.lashes-left, .lashes-right {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.eye-lashes {
+    background-color: black;
+    height: 100px;
+    width: 10px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.eye-lashes.one {
+    transform: rotate(-20deg);
+}
+
+.eye-lashes.two {
+    transform: translateY(-10%);
+}
+
+.eye-lashes.three {
+    transform: rotate(20deg);
+}
+
+/* Mouth */
+
+.mouth {
+    position: absolute;
+    height: 30vh;
+    width: 30vw;
+    margin-left: 35vw;
+    z-index: -1 ;
+    transform: translateY(-3vw);
+}
+
+.lowerlip {
+    position: absolute;
+    top: 0;
+    left: 2.5vw;
+    height: 40vh;
+    width: 25vw;
+    background-color: #5D0000;
+    border-radius: 0 0 230px 230px;
+    border: 10px solid;
+    border-color: transparent black black black;
+    z-index: -4;
+}
+
+.lowerlip.outer {
+    background-color: transparent;
+    position: absolute;
+    z-index: -2;
+}
+
+    
+
+.upperlip {
+    position: absolute;
+    width: 30vw;
+    margin-left: 2.5vw;
+    height: 20vh;
+    border: 10px solid;
+    border-radius: 0px 0px 50% 50%;
+    border-color: transparent transparent black transparent;
+    transform: translateX(-2.5vw);
+    background-color: #fff939;
+    z-index: -1;
+}
+
+.teeth {
+    display: flex;
+    width: 9vw;
+    height: 20vh;
+    position: absolute;
+    justify-content: space-between;
+    z-index: -2;
+    transform: translate(10.25vw,30% );
+}
+
+.tooth {
+    background-color: white;
+    width: 40%;
+    height: inherit;
+    box-shadow: 0 5px 10px black;
+}
+
+.tooth.one {
+    transform: rotate(5deg);
+}
+
+.tooth.two {
+    transform: rotate(-5deg);
+}
+
+.tongue {
+    position: absolute;
+    top: 110%;
+    left: 26%;
+    display: flex;
+    width: 13vw;
+    height: 7vh;
+    border: 5px solid transparent;
+    justify-content: center;
+    z-index: -4;
+    border-radius: 0 0 500% 900%;
+    overflow: hidden;
+}
+
+
+.tong {
+    width: 60%;
+    height: 150px;
+    background-color: #f49198;
+    border-radius: 50%;
+    transform: rotate(20deg);
+}
+
+.t-one {
+    margin-right: -30px;
+    transform: rotate(30deg);
+}
+
+.nose {
+    display: inline-block;
+    position: absolute;
+    top: 80%;       
+    left: 48%;
+    z-index: 2;
+}       
+
+.main-nose {
+    border: 5px solid black;
+    /* border-radius: 35px; */
+    background-color: #fff939;
+    width: 70px;
+    height: 95px;
+    position: absolute;
+    border-color: black black transparent black;
+    border-bottom-right-radius: 90px 200px;
+    border-bottom-left-radius: 90px 180px;
+    border-top-right-radius: 120%;
+    border-top-left-radius: 120%;
+}
+
+.cheeks {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    height: 10vh;
+    top: 20%;
+}
+
+.cheek {
+    width: 20%;
+    height: 15vh;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: #EA4300 transparent #EA4300 #EA4300;
+    background-color: transparent;
+    border-width: 5px 1px 5px 10px;
+
+}
+
+.cheek-mark {
+    width: 7px;
+    height: 50px;
+    border-color: black transparent black black;
+    border-width: 1px 0px 1px 10px;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    background-color: black;
+    position: absolute;
+    z-index: 4;
+    transform: translate(60px, 70%);
+}
+
+.cheek.one {
+    margin-left: -30px;
+    transform: rotate(40deg);
+    position: relative;
+}
+
+.cheek.two {
+    transform: rotate(145deg);
+    position: relative;
+    margin-right: -30px;
+}
+
+.cheekballs {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #EA4300;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.cheekballs.one {
+    transform: translate(10px, 20px);
+}
+
+.cheekballs.two {
+    transform: translate(10px, -30px);
+}
+
+.cheekballs.three {
+    transform: translate(30px, -5px);
+}
+
+/* .box {
+    width:300px;
+    height: 300px;
+    border: solid 5px #000;
+    border-color: transparent transparent #000 transparent;
+    border-radius: 0 0 250px 250px;
+    background-color: gray;
+  } */

@@ -1,0 +1,50 @@
+.banner {
+
+    &__form {
+
+        position: relative;
+        width: 100%;
+
+        &--cell {
+            display: inline-block;
+            &:not(:last-child) {
+                margin-right: 5rem;
+            }
+
+            // &::after {
+            //     content: "";
+            //     width: 1px;
+            //     height: 2.5rem;
+            //     background-color: $color-grey;
+            //     position: absolute;
+            //     right: -5rem;
+            //     top: 1.5rem;
+            // }
+ 
+        }
+    
+        &--label {
+            display: block;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: $font-smaller;
+            margin-bottom: .8rem;
+        }
+    
+        &--input {
+            height: 4rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    
+    
+}
+
+.big-bar {
+    width: 20rem;
+}
+
+.small-bar {
+    width: 15rem;
+}

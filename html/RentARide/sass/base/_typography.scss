@@ -1,0 +1,35 @@
+.header__main {
+
+    &--text {
+        font-size: $font-large;
+        font-weight: 700;
+        line-height: 8rem;
+        color: $color-black;
+        margin-bottom: $margin-bottom-medium;
+    }
+
+    &--special-text {
+        color: $color-blue-dark;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 8rem;
+            left: 0;
+            background-color: $color-blue-dark;
+            width: 13rem;
+            height: 5px;
+            transform: skew(-60deg, -2deg);
+
+        }
+    }
+
+    &--paragraph {
+        color: $color-blue-dark;
+        font-size: $font-medium;
+        line-height: 1.5;
+        margin-bottom: $margin-bottom-small;
+        width: 50rem;
+        font-weight: 600;
+    }
+}

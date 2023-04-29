@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="outer-circle one"></div>
+        <div class="outer-circle two"></div>
+        <div class="outer-circle three"></div>
+        <div class="outer-circle three"></div>
+      </div>
+      <style>
+        body {
+          background: #191919;
+        }
+        .outer-circle {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background: #714b67;
+          display: inline-block;
+          position: relative;
+          margin:-1;
+        }
+      
+        .outer-circle::after {
+          content: "";
+          z-index: 1;
+          width: 50%;
+          height: 50%;
+          border-radius: 50%;
+          position: absolute;
+          background: #191919;
+          transform: translate(50%, 50%)
+        }
+      
+        .two, .three {
+          background: #8f8f8f
+        }
+      
+        .two::before {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          width: 25%;
+          background: #8f8f8f;
+          height: 90%;
+          transform: translate(60px, -20px);
+          border-radius: 25px;
+        
+        }
+        
+        .container {
+          position: relative;
+          top: 115px;
+          left:30px;
+        }
+      </style>
+      
+      <!-- OBJECTIVE -->
+      <!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+      
+      <!-- SCORING -->
+      <!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+      
+      <!-- IMPORTANT: remove the comments before submitting -->
+</body>
+</html>

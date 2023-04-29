@@ -1,0 +1,70 @@
+.header__banner {
+    
+
+    &--form {
+        background-color: $color-white;
+        border-radius: 1rem;
+        padding: 2rem 5rem;
+        margin: 0 7rem;
+    }
+
+    &--location {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        gap: 2rem;
+    }
+
+    &--cell {
+        display: inline-block;
+        width: 100%;
+
+    }
+
+    &--label {
+        color: $color-black;
+        font-size: $font-small-1;
+        font-weight: 600;
+        display: block;
+    }
+
+    &--input {
+        color: $color-black;
+        padding: 1rem 2rem;
+        width: 100%;
+        border-radius: 1rem;
+        border: 1px solid $color-black-light;
+        font-size: $font-small-1;
+        font-weight: 500;
+        position: relative;
+        display: inline-block;
+
+        &-icon {
+        }
+        
+        // &:not(:last-child) {
+        //     margin-right: 10%;
+        // }
+
+        &::placeholder {
+            color: $color-black-light;
+        }
+    }
+
+    &--submit {
+        display: none;
+    }
+
+    &--submit-label {
+        width: 100%;
+        text-align: center;
+        background-color: $color-grey-light;
+        padding: 1rem 3rem;
+        color: $color-grey-dark;
+        font-weight: 600;
+        font-size: $font-small-1;
+        border-radius: 1rem;
+        cursor: pointer;
+
+    }
+}

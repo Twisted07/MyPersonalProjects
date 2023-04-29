@@ -1,0 +1,72 @@
+.header__main {
+
+    &--button {
+
+        margin-bottom: 3rem;
+        
+        &-apple {
+            text-decoration: none;
+            display: inline-block;
+            background-color: $color-black;
+            color: $color-white;
+            margin-right: 3rem;
+            position: relative;
+
+        }
+
+        &-google {
+            text-decoration: none;
+            display: inline-block;
+            background-color: $color-black;
+            color: $color-white;
+            position: relative;
+
+        }
+
+        &-logo {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(-10%, -50%);
+            height: 2.5rem;
+        }
+
+        &-smalltext {
+            font-size: $font-smaller;
+            margin-left: 4rem;
+            font-weight: 500;
+        }
+
+        &-bigtext {
+            font-size: $font-small;
+            font-weight: 600;
+            margin-left: 4rem;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.button {
+    box-shadow: 0 0rem 2rem rgba($color-black, .3);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    position: relative;
+    transition: all .2s;
+        &:hover {
+            transform: translateY(-.5rem);
+            box-shadow: 0 .5rem 2rem rgba($color-black, .3);
+        }
+    
+    &__submit {
+        display: none;
+    }
+}
+
+.btn-blue {
+    background-color: $color-blue-dark;
+    color: $color-white;
+    font-size: $font-smaller;
+    font-weight: 700;
+    padding: 1rem 3rem;
+}

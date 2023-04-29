@@ -1,0 +1,77 @@
+.header{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+
+}
+
+
+.intro{
+    background-color: coral;
+    gap: 10px;
+    color: white;
+    padding: 15px;
+}
+.intro h1{
+    margin: 0;
+}
+.dropdown{
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+.brands{
+    background-color: bisque;
+}
+p{
+    display: inline-block;
+}
+.logo{
+    border: 1px solid #000000;
+    /* font-size: 50px; */
+    display: inline-block;
+    padding: 2px;
+
+}
+
+.text-middle{
+    border: 1px solid black;
+}
+
+.visitSite 
+{
+    text-decoration-style: none;
+    color: white;
+    /* display: flex; */
+    border: 1px solid white;
+}
+.visitsitebutton{
+    padding: 5px 25px 5px 25px;
+    border: 2px solid white;
+    background-color: brown;
+    align-items: center;
+    display: flex;
+    height: min-content;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.asos
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px;
+    align-items: center;
+
+}
+
+main {
+    border: 1px solid yellow;
+    margin: 0 auto;
+    width: 70vw;
+}

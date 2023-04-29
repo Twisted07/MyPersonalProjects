@@ -1,0 +1,38 @@
+.form-section {
+    width: 90%;
+    height: 70rem;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    background-image: linear-gradient(to right bottom, $color-secondary-lighter, $color-secondary-darker);
+    box-shadow: 0 2rem 5rem rgba($color-black, .5);
+    position: relative;
+    padding: 10rem;
+}
+
+.info-section {
+    padding: 5rem;
+    background-image: linear-gradient(to bottom, $color-tertiary-lighter, $color-tertiary-darker);
+    margin: 5rem;
+    position: relative;
+
+    & .notification {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background-color: rgb(218, 55, 63);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: #FFFFFF;
+        position: absolute;
+        top: -2.5rem;
+        left: -2.5rem;
+        box-shadow: 0px 0px 2rem #00000080;
+    }
+}
+
+
+
+
+
