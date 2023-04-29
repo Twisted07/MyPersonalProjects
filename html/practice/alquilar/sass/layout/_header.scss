@@ -1,11 +1,34 @@
 .header__body {
-    padding: 10rem 0rem;
-    // display: flex;
-    // justify-content: space-between;
+    padding: 10rem 0rem 0 0;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    // width: 100%;
     // overflow: hidden;
 
     &--left {
         padding-left: 10rem;
+        margin-top: 8rem;
+
+    }
+
+    &--right {
+        height: 120vh;
+        // margin-top: 5rem;
+        width: 32vw;
+        border: 1px solid white;
+        overflow-x: hidden;
+        
+        &-circle {
+            // margin-top: 1rem;
+            width: 35vw;
+            height: 35vw;
+            border-radius: 50%;
+            border: 6rem solid $color-yellow;
+            background-color: $color-purple-light;
+            outline: 8rem solid $color-purple-dark;
+            box-shadow: 8vw 60vh 0 $color-white;
+        }
     }
 
     // &--right {

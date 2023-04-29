@@ -9,7 +9,7 @@ html {
 body {
   box-sizing: border-box;
   background-color: #ffffff;
-  width: 100vw; }
+  width: 100%; }
 
 .header__body--text {
   width: 27vw; }
@@ -78,59 +78,91 @@ body {
     .button__link--transparent:active {
       color: #ffd500; }
 
-.header__banner--form {
-  background-color: #ffffff;
-  border-radius: 1rem;
-  padding: 2rem 5rem;
-  margin: 0 7rem; }
-
-.header__banner--location {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-  gap: 2rem; }
-
-.header__banner--cell {
-  display: inline-block;
-  width: 100%; }
-
-.header__banner--label {
-  color: #000000;
-  font-size: 1.6rem;
-  font-weight: 600;
-  display: block; }
-
-.header__banner--input {
-  color: #000000;
-  padding: 1rem 2rem;
+.header__circle {
+  position: absolute;
+  top: -55vh;
   width: 100%;
-  border-radius: 1rem;
-  border: 1px solid #454545;
-  font-size: 1.6rem;
-  font-weight: 500;
+  height: 55vh;
+  border: 1px solid yellow;
+  overflow: hidden;
+  z-index: 100; }
+  .header__circle--white {
+    width: 150%;
+    height: 180vw;
+    transform: translate(-20%, -0.5%) rotate(20deg);
+    background-color: #ffffff;
+    border-radius: 50%; }
+
+.header__banner {
+  margin-top: 10rem;
   position: relative;
-  display: inline-block; }
-  .header__banner--input::placeholder {
-    color: #454545; }
-
-.header__banner--submit {
-  display: none; }
-
-.header__banner--submit-label {
-  width: 100%;
-  text-align: center;
-  background-color: #949393;
-  padding: 1rem 3rem;
-  color: #535252;
-  font-weight: 600;
-  font-size: 1.6rem;
-  border-radius: 1rem;
-  cursor: pointer; }
+  z-index: 500; }
+  .header__banner--form {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 5rem;
+    margin: 0 7rem;
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.3); }
+  .header__banner--location {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 2rem; }
+  .header__banner--cell {
+    display: inline-block;
+    width: 100%; }
+  .header__banner--label {
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem; }
+  .header__banner--input {
+    color: #000000;
+    padding: 1rem 2rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.3);
+    font-size: 1.6rem;
+    font-weight: 500;
+    position: relative;
+    display: inline-block; }
+    .header__banner--input::placeholder {
+      color: #454545; }
+  .header__banner--submit {
+    display: none; }
+  .header__banner--submit-label {
+    width: 100%;
+    text-align: center;
+    background-color: #949393;
+    padding: 1rem 3rem;
+    color: #535252;
+    font-weight: 600;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    cursor: pointer; }
 
 .header__body {
-  padding: 10rem 0rem; }
+  padding: 10rem 0rem 0 0;
+  display: flex;
+  justify-content: space-between; }
   .header__body--left {
-    padding-left: 10rem; }
+    padding-left: 10rem;
+    margin-top: 8rem; }
+  .header__body--right {
+    height: 120vh;
+    width: 32vw;
+    border: 1px solid white;
+    overflow-x: hidden; }
+    .header__body--right-circle {
+      width: 35vw;
+      height: 35vw;
+      border-radius: 50%;
+      border: 6rem solid #ffd500;
+      background-color: #7a067a;
+      outline: 8rem solid #5f015f;
+      box-shadow: 8vw 60vh 0 #ffffff; }
 
 .header__navbar {
   display: flex;
@@ -165,6 +197,20 @@ body {
 
 .header {
   background-color: #5f015f;
-  width: 100vw;
-  overflow: hidden;
-  height: 130vh; }
+  width: 100%;
+  overflow: hidden; }
+
+.main {
+  width: 100%;
+  background-color: white; }
+
+.section__bg {
+  position: absolute;
+  width: 100%;
+  border: 1px solid green; }
+
+.section__book {
+  width: 100%;
+  border: 2px solid blue;
+  position: relative;
+  top: -40vh; }

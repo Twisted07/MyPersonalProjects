@@ -1,4 +1,23 @@
 .header__circle {
+    position: absolute;
+    top: -55vh;
+    width: 100%;
+    height: 55vh;
+    border: 1px solid yellow;
+    overflow: hidden;
+    z-index: 100;
+    // background-color: $color-white;
+
+    &--white {
+        width: 150%;
+        height: 180vw;
+        transform: translate(-20%, -.5%) rotate(20deg);
+        background-color: $color-white;
+        border-radius: 50%;
+        // position: absolute;
+        // top: 2vh;
+        // transform: translate(-10%, 0%) rotate(40deg);
+    }
     // width: 120vw;
     // height: 200rem;
     // background-color: $color-white;

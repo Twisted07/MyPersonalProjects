@@ -2,9 +2,29 @@
     background-color: $color-purple-dark;
     // clip-path: polygon(0 0, 100% 0, 100% 120%, 0 130%);
     // height: 120vh;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
-    height: 130vh;
+    // height: 130vh;
 
     
+}
+
+.main {
+    width: 100%;
+    background-color: white;
+    // position: relative;
+
+}
+
+.section__bg {
+    position: absolute;
+    width: 100%;
+    border: 1px solid green;
+}
+
+.section__book {
+    width: 100%;
+    border: 2px solid blue;
+    position: relative;
+    top: -40vh;
 }

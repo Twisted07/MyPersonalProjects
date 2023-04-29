@@ -1,11 +1,16 @@
 .header__banner {
-    
+
+    margin-top: 10rem;
+    position: relative;
+    z-index: 500;    
 
     &--form {
         background-color: $color-white;
         border-radius: 1rem;
-        padding: 2rem 5rem;
+        padding: 5rem;
         margin: 0 7rem;
+        // border: 1px solid $color-grey-light;
+        box-shadow: 0 0 3rem 0 rgba($color-black, .3);
     }
 
     &--location {
@@ -26,6 +31,7 @@
         font-size: $font-small-1;
         font-weight: 600;
         display: block;
+        margin-bottom: 1rem;
     }
 
     &--input {
@@ -33,14 +39,15 @@
         padding: 1rem 2rem;
         width: 100%;
         border-radius: 1rem;
-        border: 1px solid $color-black-light;
+        border: none;
+        box-shadow: 0 0 2rem 0 rgba($color-black, .3);
         font-size: $font-small-1;
         font-weight: 500;
         position: relative;
         display: inline-block;
 
-        &-icon {
-        }
+        // &-icon {
+        // }
         
         // &:not(:last-child) {
         //     margin-right: 10%;
