@@ -14,12 +14,13 @@
         &::after {
             content: "";
             position: absolute;
-            top: 8rem;
+            top: 7rem;
             left: 0;
             background-color: $color-blue-dark;
-            width: 13rem;
-            height: 5px;
-            transform: skew(-60deg, -2deg);
+            width: 12rem;
+            height: 1rem;
+            clip-path: polygon(5% 40%, 100% 0, 95% 20%, 0 100%);
+            // transform: skew(-60deg, -2deg);
 
         }
     }
@@ -31,5 +32,53 @@
         margin-bottom: $margin-bottom-small;
         width: 50rem;
         font-weight: 600;
+    }
+}
+
+.blue-heading {
+    color: $color-blue-dark;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $font-medium;
+    margin-bottom: 1rem;
+}
+
+.black-sub {
+
+    color: $color-black;
+    font-weight: 600;
+    font-size: $font-medium-2;
+    margin-bottom: 3rem;
+
+}
+
+.details__content--text-section {
+    &-heading {
+        font-size: $font-mediumer;
+        font-weight: 600;
+        color: $color-black;
+
+    }
+
+    &-paragraph {
+        font-size: $font-mediumest;
+        font-weight: 500;
+        color: $color-blue-mid;
+    } 
+}
+
+.subscribe {
+    &__heading {
+        color: $color-white;
+        font-size: $font-medium-2;
+        font-weight: 500;
+        line-height: 1.7;
+    }
+
+    &__sub {
+        color: $color-white;
+        font-weight: 300;
+        font-size: $font-mediumer;
+        letter-spacing: .15rem;
     }
 }

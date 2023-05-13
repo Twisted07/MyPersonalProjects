@@ -10,16 +10,6 @@
             &:not(:last-child) {
                 margin-right: 5rem;
             }
-
-            // &::after {
-            //     content: "";
-            //     width: 1px;
-            //     height: 2.5rem;
-            //     background-color: $color-grey;
-            //     position: absolute;
-            //     right: -5rem;
-            //     top: 1.5rem;
-            // }
  
         }
     
@@ -32,8 +22,22 @@
         }
     
         &--input {
-            height: 4rem;
+            height: 3rem;
             margin-bottom: 1rem;
+            border: none;
+            box-shadow: 0 0 2rem 0 rgba($color-black, .3);
+            padding: 1rem 2rem;
+            color: $color-black;
+
+            &:focus {
+                outline: none;
+                border-bottom: 1px solid $color-blue-dark;
+            }
+
+            &::-webkit-input-placeholder {
+                color: $color-grey-light;
+                font-family: "Manrope";
+            }
         }
     }
 
@@ -47,4 +51,46 @@
 
 .small-bar {
     width: 15rem;
+}
+
+.newsletter__form {
+    &--input {
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid $color-blue-dark;
+        padding: 1.5rem 2rem;
+        background-color: transparent;
+        font-size: $font-small;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:invalid {
+            border-bottom-color: rgb(187, 12, 12);
+        }
+
+        &::-webkit-input-placeholder {
+            color: $color-grey;
+            font-family: "Manrope";
+        }
+    }
+
+    &--label {
+        display: block;
+        text-align: left;
+        color: $color-blue-dark;
+        margin-left: 2rem;
+        font-size: $font-smallest;
+        font-weight: 700;
+        transform: translateY(0);
+        opacity: 1;
+        transition: all .2s;
+    }
+
+    &--input:placeholder-shown + &--label {
+        transform: translateY(-2rem);
+        opacity: 0;
+    }
 }

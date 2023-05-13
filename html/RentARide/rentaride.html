@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rent A Ride | Home</title>
     <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+    <link rel="stylesheet" href="css/icon-styles.css" />
     <link rel="stylesheet" href="css/rar.css">
 </head>
 <body>
@@ -35,33 +36,36 @@
             
             <div class="header__main">
 
+                
+                <div class="header__main--content">
+                    <h1 class="header__main--text">
+                        Find, book and rent a car in <span class="header__main--special-text">Easy</span> steps.
+                    </h1>
+                    <p class="header__main--paragraph">
+                        At any time you desire, you can safely acquire a car without experiencing any form of trouble.
+                    </p>
+        
+                    <div class="header__main--button">
+                        <a href="#" class="button header__main--button-apple">
+                            <img src="img/apple.png" alt="apple logo" class="header__main--button-logo">
+                            <p class="header__main--button-smalltext">Download on</p>
+                            <p class="header__main--button-bigtext">App Store</p>
+                        </a>
+        
+                        <a href="#" class="button header__main--button-google">
+                            <img src="img/playstore.png" alt="playstore logo" class="header__main--button-logo">
+                            <p class="header__main--button-smalltext">Download on</p>
+                            <p class="header__main--button-bigtext">Google Play</p>
+                        </a>
+                    </div>
+                </div>
+                
+
                 <div class="header__main--image-container">
                     <img src="/img/benz-car-low.png" alt="Car" class="header__main--image">
                 </div>
-
-                <h1 class="header__main--text">
-                    Find, book and <br>rent a car in <span class="header__main--special-text">Easy</span> <br> steps.
-                </h1>
-                <p class="header__main--paragraph">
-                    At any time you desire, you can safely acquire a car without experiencing any form of trouble.
-                </p>
-    
-                <div class="header__main--button">
-                    <a href="#" class="button header__main--button-apple">
-                        <img src="img/apple.png" alt="apple logo" class="header__main--button-logo">
-                        <p class="header__main--button-smalltext">Download on</p>
-                        <p class="header__main--button-bigtext">App Store</p>
-                    </a>
-    
-                    <a href="#" class="button header__main--button-google">
-                        <img src="img/playstore.png" alt="playstore logo" class="header__main--button-logo">
-                        <p class="header__main--button-smalltext">Download on</p>
-                        <p class="header__main--button-bigtext">Google Play</p>
-                    </a>
-                </div>
             </div>
     
-            <!-- <div class="section__banner"> -->
             <div class="banner">
                 <form action="#" class="banner__form">
 
@@ -70,7 +74,7 @@
 
                             <div class="banner__form--cell banner__form--vehicle">
                                 <label for="vehicle" class="banner__form--label">Car Brand</label>
-                                <input list="vehicle" class="banner__form--input big-bar" name="vehicle">
+                                <input list="vehicle" class="banner__form--input big-bar" name="vehicle" placeholder="Ferrari">
                                 <datalist id="vehicle">
                                     <option value="Toyota"></option>
                                     <option value="Mercedes Benz"></option>
@@ -88,23 +92,22 @@
                             
                             <div class="banner__form--cell banner__form--location">
                                 <label for="location" class="banner__form--label">Location</label>
-                                <input type="text" class="banner__form--input big-bar" id="location">
+                                <input type="text" class="banner__form--input big-bar" id="location" placeholder="Enter your location">
                             </div>
                             
                             <div class="banner__form--cell banner__form--pickup">
                                 <label for="pickup" class="banner__form--label">Pickup date</label>
-                                <input type="date" class="banner__form--input small-bar" id="pickup">
+                                <input type="date" class="banner__form--input small-bar" id="pickup" value="2023/06/01" min="2023/05/13" max="2023/12/31" required>
                             </div>
                             
                             <div class="banner__form--cell banner__form--return">
                                 <label for="return" class="banner__form--label">Return date</label>
-                                <input type="date" class="banner__form--input small-bar" id="return">
+                                <input type="date" class="banner__form--input small-bar" id="return" value="2023/07/01" min="2023/05/13" max="2023/12/31" required>
                             </div>
 
                         </div>
 
                         <div class="col-2">
-                            <!-- <a href="#" class="button btn-blue" type="submit">Search</a> -->
                             <input type="submit" id="submit" class="button__submit">
                             <label for="submit" class="button btn-blue">Search</label>
                         </div>
@@ -114,7 +117,6 @@
                     
                 </form>
             </div>
-            <!-- </div> -->
         </section>
 
         <div class="header__icon">
@@ -131,23 +133,334 @@
 
     
     <section class="intro">
+        <div class="intro__content">
+            <h2 class="blue-heading">
+                How it works
+            </h2>
+            <h2 class="black-sub">
+                Rent a car with the following 3 steps
+            </h2>
 
+            <div class="intro__content--row u-margin-bottom-bigsmall">
+                <div class="intro__content--column intro__content--column-1">
+                    <img src="#" alt="location icon" class="intro__content--column-icon">
+                    <h6 class="intro__content--column-heading">
+                        Choose Location
+                    </h6>
+                    <p class="intro__content--column-sub">
+                        Choose your location and find your best car
+                    </p>
+                </div>
+
+                <div class="intro__content--column intro__content--column-2">
+                    <img src="#" alt="Calender icon" class="intro__content--column-icon">
+                    <h6 class="intro__content--column-heading">
+                        Pick-up Date
+                    </h6>
+                    <p class="intro__content--column-sub">
+                        Select a Pickup date and time to book your car
+                    </p>
+                </div>
+
+                <div class="intro__content--column intro__content--column-3">
+                    <img src="#" alt="car icon" class="intro__content--column-icon">
+                    <h6 class="intro__content--column-heading">
+                        Book Your Car
+                    </h6>
+                    <p class="intro__content--column-sub">
+                        Book your car and we will deliver it promptly
+                    </p>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <section class="details">
+    <section class="details u-margin-bottom-medium">
+        <div class="details__content">
+            <img src="#" alt="Car" class="details__content--car">
+            <div class="details__content--text">
+                <div class="blue-heading">
+                    Why choose us
+                </div>
+                <div class="black-sub">
+                    Experience excellence with our rental deals.
+                </div>
+                
+                <div class="details__content--text-deals u-margin-bottom-bigsmall">
+                    <i class="details__content--icon">#</i>
+                    <div class="details__content--text-section">
+                        <h6 class="details__content--text-section-heading">
+                            Flexible Rental Periods
+                        </h6>
+                        <p class="details__content--text-section-paragraph">
+                            We offer flexible rental periods, from daily to monthly rentals so you can choose the one that suits you.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="details__content--text-deals u-margin-bottom-bigsmall">
+                    <i class="details__content--icon">#</i>
+                    <div class="details__content--text-section">
+                        <h6 class="details__content--text-section-heading">
+                            Competitive Pricing
+                        </h6>
+                        <p class="details__content--text-section-paragraph">
+                            We offer affordable and flexible pricing plans that are designed to meet your budget.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="details__content--text-deals u-margin-bottom-bigsmall">
+                    <i class="details__content--icon">#</i>
+                    <div class="details__content--text-section">
+                        <h6 class="details__content--text-section-heading">
+                            Drivers Available
+                        </h6>
+                        <p class="details__content--text-section-paragraph">
+                            We also provide drivers if you don't want to drive, to ensure you have a seemless experience with us.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="details__content--text-deals">
+                    <i class="details__content--icon">#</i>
+                    <div class="details__content--text-section">
+                        <h6 class="details__content--text-section-heading">
+                            Superior Customer Service
+                        </h6>
+                        <p class="details__content--text-section-paragraph">
+                            A team of knowledgeable and friendly professionals ready to support you with your concerns 24/7.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="recommend">
+    <section class="recommend u-margin-bottom-medium u-center-text">
+        <h3 class="blue-heading u-center-text">
+            Popular rental deals
+        </h3>
+        <h2 class="black-sub u-center-text u-margin-bottom-medium">
+            The rental deals people choose
+        </h2>
+
+        <div class="recommend__card u-margin-bottom-bigsmall">
+            <div class="recommend__card--col">
+                <div class="recommend__card--side recommend__card--side-front">
+                    <div class="recommend__card--image recommend__card--image-one">&nbsp;</div>
+                    <div class="recommend__card--front-details">
+                        <h3 class="recommend__card--front-details-title">
+                            <span class="recommend__card--front-details-title-span recommend__card--front-details-title-span-one">Mercedes-Benz 2019</span>
+                        </h3>
+                        <ul class="recommend__card--list">
+                            <li>
+                                <i>#</i>
+                                <p>4 Passengers</p>
+                            </li>
+                            <li>
+                                <i>#</i>
+                                <p>Automatic</p>
+                            </li>
+                            <li>
+                                <i>#</i>
+                                <p>Air Conditioning</p>
+                            </li>
+                            <li>
+                                <i>#</i>
+                                <p>4 Doors</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recommend__card--side recommend__card--side-back recommend__card--side-back-one">
+                    <div class="recommend__card--cta">
+                        <p class="recommend__card--price">
+                            N80,000<span>/day</span>
+                        </p>
+                        <a href="#" class="recommend__card--cta-text btn-round">
+                            Rent Now
+                            <i class="recommend__card--cta-icon">&rarr;</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="recommend__card--col">
+                <div class="recommend__card--side recommend__card--side-front">
+                    <div class="recommend__card--image recommend__card--image-two">&nbsp;</div>
+                    <div class="recommend__card--front-details">
+                        <h3 class="recommend__card--front-details-title">
+                            <span class="recommend__card--front-details-title-span recommend__card--front-details-title-span-two">Mercedes-Benz 2019</span>
+                        </h3>
+                        <ul class="recommend__card--list">
+                            <li>
+                                <i>#</i>
+                                <p>4 Passengers</p>
+                            </li>
+                            <li>
+                                <i>#</i>
+                                <p>Automatic</p>
+                            </li>
+                            <li>
+                                <i>#</i>
+                                <p>Air Conditioning</p>
+                            </li>
+                            <li>
+                                <i>#</i>
+                                <p>4 Doors</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recommend__card--side recommend__card--side-back recommend__card--side-back-two">
+                    <div class="recommend__card--cta">
+                        <p class="recommend__card--price">
+                            N80,000<span>/day</span>
+                        </p>
+                        <a href="#" class="recommend__card--cta-text btn-round">
+                            Rent Now
+                            <i class="recommend__card--cta-icon">&rarr;</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommend__card--col">
+                <div class="recommend__card--side recommend__card--side-front">
+                    <div class="recommend__card--image recommend__card--image-three">&nbsp;</div>
+                    <div class="recommend__card--front-details">
+                        <h3 class="recommend__card--front-details-title">
+                            <span class="recommend__card--front-details-title-span recommend__card--front-details-title-span-three">Mercedes-Benz 2019</span>
+                        </h3>
+                        <ul class="recommend__card--list">
+                            <li>
+                                <i>#</i>
+                                <p>4 Passengers</p>
+                            </li>
+                            <li>
+                                <i>#</i>
+                                <p>Automatic</p>
+                            </li>
+                            <li>
+                                <i>#</i>
+                                <p>Air Conditioning</p>
+                            </li>
+                            <li>
+                                <i>#</i>
+                                <p>4 Doors</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recommend__card--side recommend__card--side-back recommend__card--side-back-three">
+                    <div class="recommend__card--cta">
+                        <p class="recommend__card--price">
+                            N80,000<span>/day</span>
+                        </p>
+                        <a href="#" class="recommend__card--cta-text btn-round">
+                            Rent Now
+                            <i class="recommend__card--cta-icon">&rarr;</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommend__card--col">
+                <div class="recommend__card--side recommend__card--side-front">
+                    <div class="recommend__card--image recommend__card--image-four">&nbsp;</div>
+                    <div class="recommend__card--front-details">
+                        <h3 class="recommend__card--front-details-title">
+                            <span class="recommend__card--front-details-title-span recommend__card--front-details-title-span-four">Mercedes-Benz 2019</span>
+                        </h3>
+                        <ul class="recommend__card--list">
+                            <li>
+                                <i>#</i>
+                                <p>4 Passengers</p>
+                            </li>
+                            <li>
+                                <i>#</i>
+                                <p>Automatic</p>
+                            </li>
+                            <li>
+                                <i>#</i>
+                                <p>Air Conditioning</p>
+                            </li>
+                            <li>
+                                <i>#</i>
+                                <p>4 Doors</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recommend__card--side recommend__card--side-back recommend__card--side-back-four">
+                    <div class="recommend__card--cta">
+                        <p class="recommend__card--price">
+                            N80,000<span>/day</span>
+                        </p>
+                        <a href="#" class="recommend__card--cta-text btn-round">
+                            Rent Now
+                            <i class="recommend__card--cta-icon">&rarr;</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="recommend__btn">See All Vehicles &rarr;</a>
         
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials u-margin-bottom-medium u-center-text">
+        <h2 class="blue-heading">Testimonials</h3>
+        <h3 class="black-sub u-margin-bottom-bigsmall">What do our customers say about us?</h3>
+    </section>
+
+    <section class="subscribe u-margin-bottom-medium">
+        <div class="subscribe__left">
+            <h2 class="subscribe__heading u-margin-bottom-small">Download RentARide App for free</h2>
+            <p class="subscribe__sub u-margin-bottom-bigsmall">For faster bookings and exclusive deals.</p>
+
+            <a href="#" class="button header__main--button-apple">
+                <img src="img/apple.png" alt="apple logo" class="header__main--button-logo">
+                <p class="header__main--button-smalltext">Download on</p>
+                <p class="header__main--button-bigtext">App Store</p>
+            </a>
+
+            <a href="#" class="button header__main--button-google">
+                <img src="img/playstore.png" alt="playstore logo" class="header__main--button-logo">
+                <p class="header__main--button-smalltext">Download on</p>
+                <p class="header__main--button-bigtext">Google Play</p>
+            </a>
+
+        </div>
+        <div class="subscribe__right">
+            <div class="three-rings">
+                <div class="three-rings--one">&nbsp;</div>
+                <div class="three-rings--two">&nbsp;</div>
+                <div class="three-rings--three">&nbsp;</div>
+            </div>
+        </div>
 
     </section>
 
-    <section class="subscribe">
+    <section class="newsletter u-margin-bottom-medium u-center-text">
+        <h3 class="black-sub">Subscribe For Any News Updates From RentARide</h3>
+        <form action="#" method="get">
+            <div class="newsletter__form u-margin-bottom-bigsmall">
+                <input type="email" placeholder="Enter Your Email" id="email" class="newsletter__form--input">
+                <label for="email" class="newsletter__form--label">Email</label>
+            </div>
 
+            <input type="submit" id="submit" class="button__submit">
+            <label for="submit" class="btn-subscribe button btn-blue">Subscribe</label>
+
+        </form>
     </section>
 
     <footer class="footer">

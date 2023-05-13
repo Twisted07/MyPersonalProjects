@@ -1,0 +1,156 @@
+.recommend__card {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    grid-auto-columns: 1fr;
+    border: none;
+
+
+    &--col {
+        height: 42rem;
+        border: none;
+        position: relative;
+        perspective: 180rem;
+    }
+
+    &--side {
+        height: 42rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        transition: all 1s;
+        box-shadow: 0 0 2rem 0 rgba($color-black, .2);
+        border-radius: 10px;
+        overflow: hidden;
+        
+
+        &-front {
+            background-color: $color-blue-light;
+
+            
+        }
+
+
+        &-back {
+            transform: rotateY(180deg);
+
+            &-one {
+                background-image: linear-gradient(to left bottom, $color-white, $color-blue-dark);
+                
+            }
+        }
+
+
+    }
+
+    &--col:hover &--side-front {
+        transform: rotateY(-180deg);
+    }
+
+    &--col:hover &--side-back {
+        transform: rotateY(0);
+    }
+
+    &--image {
+        height: 45%;
+        width: 100%;
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &-one {
+            background-image: url(../img/benz-car-high.png), linear-gradient(to right bottom, $color-white 10%, $color-blue-dark 90%);
+        }  
+    }
+
+    &--front-details {
+        padding: 2rem 4rem;
+
+        &-title {
+            display: block;
+            width: 80%;
+            font-size: $font-medium;
+            font-weight: 300;
+            color: $color-white;
+            position: absolute;
+            top: 14rem;
+            right: 1.5rem;
+            text-align: right;
+            text-transform: uppercase;
+
+
+
+            &-span {
+            padding: .5rem 1.5rem;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+            line-height: 1.7;
+
+            &-one {
+                background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark);
+            }
+            }
+        }
+
+        ul {
+            list-style: none;
+            margin: 3rem auto;
+            text-align: left;
+
+            li {
+                color: $color-blue-dark;
+                font-size: $font-mediumest;
+
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                    padding-bottom: 1rem;
+                    border-bottom: 1px solid $color-grey-light;
+                }
+                
+                i {
+                    display: inline-block;
+                    margin-right: 3rem;
+                    text-align: left;
+                }
+
+                p {
+                    display: inline-block;
+                }
+
+            }
+        }
+    }
+
+
+    &--price {
+        color: $color-white;
+        font-weight: 300;
+        font-size: $font-large-2;
+        margin-bottom: 10rem;
+
+        span {
+            font-size: $font-mediumer;
+        }
+    }
+
+    &--cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+
+        &-text {
+            text-decoration: none;
+            color: $color-blue-dark;
+            font-size: $font-mediumer;
+            font-weight: 600;
+        }
+
+    }
+
+
+}

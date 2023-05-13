@@ -6,8 +6,72 @@
 
 }
 
-// .section__banner {
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-// }
+
+.intro {
+    width: 100%;
+    background-color: $color-white;
+
+    &__content {
+        margin: 5rem auto;
+        text-align: center;
+    }
+}
+
+
+
+.details {
+    background-color: $color-blue-light;
+    width: 100%;
+
+    &__content {
+        margin: 5rem 10rem;
+        display: inline-block;
+
+
+        &--car {
+            display: inline-block;
+            margin-right: 5rem;
+        }
+
+        &--text {
+            display: inline-block;
+
+            &-section {
+                display: inline-block;
+
+                &-heading {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.recommend {
+    width: 100%;
+
+}
+
+.subscribe {
+    width: 80%;
+    background-color: $color-blue-dark;
+    margin: 0 auto;
+    padding: 5rem 10rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem 0 rgba($color-black, .4);
+    display: grid;
+    grid-template-columns: 1.4fr 2fr;
+    gap: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.newsletter {
+    width: 60%;
+    background-color: $color-blue-light;
+    margin: 0 auto;
+    padding: 5rem 10rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem 0 rgba($color-black, .4);
+
+}

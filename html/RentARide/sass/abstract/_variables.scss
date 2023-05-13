@@ -1,7 +1,10 @@
 
 //colors
-$color-purple-light: rgb(236, 200, 236);
+$color-purple-light: rgb(212, 205, 248);
 $color-blue-dark: navy;
+$color-blue-light: rgb(227, 227, 238);
+$color-blue-mid: rgb(51, 51, 153);
+$color-blue-middi: rgb(58, 199, 255);
 $color-white: white;
 $color-black: black;
 
@@ -13,14 +16,17 @@ $color-grey-dark: rgb(80, 80, 80);
 $font-smallest: 1.1rem;
 $font-smaller: 1.2rem;
 $font-small: 1.3rem;
-$font-medium: 1.8rem;
+$font-medium: 2rem;
+$font-medium-2: 3rem;
 $font-mediumer: 1.5rem;
 $font-mediumest: 1.4rem;
-$font-large: 7rem;
+$font-large: 6rem;
+$font-large-2: 4rem;
 
 //widths
 $column-width: 100%;
-$grid-width: 100%;
+$grid-width: 114rem;
+$grid-gutter-horizontal: 2rem;
 
 //margin bottom
 $margin-section: 3rem;

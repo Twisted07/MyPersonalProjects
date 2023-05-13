@@ -4,6 +4,9 @@
 
     &__main {
         margin-top: 10vh;
+        display: grid;
+        grid-template-columns: 45fr 55fr;
+        gap: 3rem;
         
         &--image-container {
             display: inline-block;
@@ -35,6 +38,7 @@
 
         &--image {
             height: 4rem;
+            filter: grayscale(1);
         }
     }
 

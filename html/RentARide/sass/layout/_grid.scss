@@ -22,3 +22,36 @@
     }
 }
 
+
+
+.intro__content {
+    &--row {
+        width: 100%;
+
+        @include clearfix;
+    }
+
+    &--column {
+        display: inline-block;
+        width: 18rem;
+
+        &:not(:last-of-type) {
+            margin-right: 15vw;
+        }
+
+        &-heading {
+            font-weight: 800;
+            text-align: center;
+            font-size: $font-small;
+            color: $color-black;
+        }
+
+        &-sub {
+            font-weight: 600;
+            font-size: $font-smaller;
+            color: $color-black;
+            text-align: center;
+        }
+    }
+
+}

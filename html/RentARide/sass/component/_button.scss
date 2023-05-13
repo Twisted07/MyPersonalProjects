@@ -9,7 +9,7 @@
             display: inline-block;
             background-color: $color-black;
             color: $color-white;
-            margin-right: 3rem;
+            margin-right: 2rem;
             position: relative;
 
         }
@@ -33,14 +33,14 @@
 
         &-smalltext {
             font-size: $font-smaller;
-            margin-left: 4rem;
+            margin-left: 3rem;
             font-weight: 500;
         }
 
         &-bigtext {
             font-size: $font-small;
             font-weight: 600;
-            margin-left: 4rem;
+            margin-left: 3rem;
             letter-spacing: 1px;
         }
     }
@@ -53,6 +53,8 @@
     text-decoration: none;
     position: relative;
     transition: all .2s;
+    cursor: pointer;
+    
         &:hover {
             transform: translateY(-.5rem);
             box-shadow: 0 .5rem 2rem rgba($color-black, .3);
@@ -60,6 +62,7 @@
     
     &__submit {
         display: none;
+        
     }
 }
 
@@ -69,4 +72,64 @@
     font-size: $font-smaller;
     font-weight: 700;
     padding: 1rem 3rem;
+}
+
+.recommend__btn {
+    display: inline-block;
+    text-align: center;
+    padding: 2rem 4rem;
+    color: $color-blue-dark;
+    background-color: $color-white;
+    text-decoration: none;
+    box-shadow: 0 0 3rem rgba($color-black, .3);
+    border-radius: 2rem;
+    margin-top: 3rem;
+    font-size: $font-small;
+    font-weight: 900;
+    transition: all .2s;
+
+    &:hover {
+        transform: translateY(-.5rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, .32);
+    }
+
+    &:active {
+        transform: translateY(-.2rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .4);
+    }
+}
+
+.btn-round {
+    display: inline-block;
+    background-color: $color-white;
+    padding: 1.5rem 3rem;
+    border-radius: 3rem;
+    box-shadow: 0 0 3rem rgba($color-black, .3);
+    transition: all .2s;
+    position: relative;
+
+    &:hover {
+        transform: translateY(-.5rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, .32);
+    }
+
+    &:active {
+        transform: translateY(-.2rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .4);
+    }
+}
+
+.btn-subscribe {
+    padding: 1rem 5rem;
+    display: inline-block;
+
+    &:hover {
+        transform: translateY(-.5rem);
+        box-shadow: 0 .5rem 1.5rem rgba($color-black, .32);
+    }
+
+    &:active {
+        transform: translateY(-.2rem);
+        box-shadow: 0 .3rem 1rem rgba($color-black, .5);
+    }
 }
