@@ -1,0 +1,36 @@
+//"hello"
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //font size equals 1rem
+  font-size: 62.5%;
+
+  @include responsive(big-screen) {
+    font-size: 75%;
+  }
+
+  @include responsive(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include responsive(tab-port) {
+    font-size: 50%;
+  }
+
+  @include responsive(phone) {
+        font-size: 30%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+
+    @include responsive(tab-port) {
+        padding: 0;
+    }
+}
