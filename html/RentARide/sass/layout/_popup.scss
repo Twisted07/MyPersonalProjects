@@ -1,0 +1,121 @@
+.pop-up {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color-black, .7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+
+    &:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &:target &__sign-in {
+        visibility: visible;
+        opacity: 1;
+        scale: 1;
+    }
+
+    &__sign-in {
+        position: absolute;
+        width: 35%;
+        height: fit-content;
+        padding: Min(10vh, 3rem);
+        inset: 0;
+        margin: auto;
+        visibility: hidden;
+        background-color: $color-white;
+        border-radius: 5px;
+        opacity: 0;
+        scale: .25;
+        transition: all .3s .1s;
+    }
+
+    &__methods {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--dash {
+            width: 5rem;
+            height: 2px;
+            background-color: $color-grey;
+        }
+
+        &--text {
+            margin: 0 1rem;
+            font-size: $font-small;
+            color: $color-black;
+            font-weight: 600;
+        }
+
+        
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+
+        margin-bottom: 8rem;
+
+        img {
+            width: 4rem;
+        }
+
+        a {
+            transition: all .2s;
+        }
+
+        a:hover {
+            scale: 1.25;
+        }
+    }
+
+    &__register {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        width: 35%;
+        height: fit-content;
+        padding: Min(10vh, 3rem);
+        inset: 0;
+        margin: auto;
+        background-color: $color-white;
+        border-radius: 5px;
+        scale: .25;
+        transition: all .3s .1s;
+    }
+
+    &:target &__register {
+        opacity: 1;
+        visibility: visible;
+        scale: 1;
+    }
+
+    &__close {
+        position: absolute;
+        right: 3rem;
+        top: 2rem;
+        font-size: 4rem;
+        color: $color-grey-dark;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            color: $color-blue-light-2;
+        }
+    }
+
+    
+
+
+}

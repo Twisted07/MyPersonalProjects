@@ -35,3 +35,31 @@
         transform: translate(-7rem, 5rem);
     }
 }
+
+.intro__content--bg {
+    &-up {
+        width: 25rem;
+        height: 15rem;
+        border-radius: 50% ;
+        border: 1.5px dotted $color-blue-dark-2;
+        border-color: $color-blue-dark-2 transparent transparent  transparent;
+        position: absolute;
+        right: 35%;
+        top: 3rem;
+        transform: translate(60%, -2rem);
+        z-index: 5;
+    }
+
+    &-down {
+        width: 25rem;
+        height: 15rem;
+        border-radius: 50% ;
+        border: 1.5px dotted $color-blue-dark-2;
+        border-color: transparent transparent $color-blue-dark-2 transparent;
+        position: absolute;
+        left: 35%;
+        z-index: 5;
+        top: -3rem;
+        transform: translate(-60%, -2rem);
+    }
+}

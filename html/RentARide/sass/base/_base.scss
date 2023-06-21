@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    
 }
 
 html {
@@ -12,4 +13,13 @@ body {
     box-sizing: border-box;
     font-family: 'Manrope';
     
+}
+
+a:focus {
+    outline: 2px solid $color-blue-dark;
+    outline-offset: 0;
+}
+
+a {
+    text-decoration: none;
 }

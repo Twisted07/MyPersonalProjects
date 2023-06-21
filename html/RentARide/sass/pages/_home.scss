@@ -1,7 +1,7 @@
 
 .section__header {
     width: 100%;
-    margin-bottom: $margin-section;
+    // margin-bottom: $margin-section;
     
 
 }
@@ -24,25 +24,45 @@
     width: 100%;
 
     &__content {
-        margin: 5rem 10rem;
-        display: inline-block;
+        width: 85%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        gap: 5rem;
+
 
 
         &--car {
-            display: inline-block;
-            margin-right: 5rem;
+            margin-top: 20%;
         }
 
         &--text {
-            display: inline-block;
+            margin: 5rem 0;
+
+            &-deals {
+                display: flex;
+                align-items: flex-start;
+
+            }
 
             &-section {
                 display: inline-block;
+                flex: 1;
 
                 &-heading {
                     margin-bottom: 1rem;
                 }
             }
+        }
+
+        &--icon {
+            // flex: 0 0 10%;
+            width: 4rem;
+            height: 4em;
+            border-radius: 1rem;
+            background-color: $color-white;
+            margin-right: 1rem;
+            padding: 1rem;
         }
     }
 }
@@ -60,13 +80,18 @@
     border-radius: 1rem;
     box-shadow: 0 0 3rem 0 rgba($color-black, .4);
     display: grid;
-    grid-template-columns: 1.4fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 5rem;
     position: relative;
     overflow: hidden;
+
+    &__left {
+        width: 80%;
+    }
 }
 
 .newsletter {
+    // max-width: 115rem;
     width: 60%;
     background-color: $color-blue-light;
     margin: 0 auto;
@@ -74,4 +99,30 @@
     border-radius: 1rem;
     box-shadow: 0 0 3rem 0 rgba($color-black, .4);
 
+    &__heading {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+.footer {
+    width: 100%;
+    background-color: $color-blue-dark;
+    padding: 5rem 0 5rem 0;
+
+    &__container {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+        color: $color-white;
+    }
+
+    &__contact-us {
+        width: 25%;
+    }
+
+    
 }

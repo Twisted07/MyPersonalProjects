@@ -1,6 +1,7 @@
 .header {
     background-color: $color-purple-light;
-    padding: 5rem 10rem 0 10rem;
+    width: 100%;
+    padding-top: 5rem;
 
     &__main {
         margin-top: 10vh;
@@ -9,12 +10,13 @@
         gap: 3rem;
         
         &--image-container {
-            display: inline-block;
+            // display: inline-block;
             position: absolute;
             right: 0;
             top: 15rem;
             height: 40rem;
             z-index: 0;
+
             overflow: hidden;
         }
 

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent A Ride | Home</title>
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+    <link rel="stylesheet" href="css/icon-styles.css" />
+    <link rel="stylesheet" href="css/rar.css">
+</head>
+<body>
+
+
+    <div class="section__header">
+        <section class="header">
+            <nav class="header__nav">
+                <div class="header__nav--logo">
+    
+                </div>
+                <ul class="header__nav--list">
+                    <li class="header__nav--item"><a href="#" class="header__nav--link" id="home">Home</a></li>
+                    <li class="header__nav--item"><a href="#" class="header__nav--link">Rental deals</a></li>
+                    <li class="header__nav--item"><a href="#" class="header__nav--link">Why choose us</a></li>
+                    <li class="header__nav--item"><a href="#" class="header__nav--link">How it works</a></li>
+    
+                    <div class="header__nav--access">
+                        <a href="#pop-up__register" class="button header__nav--access-link header__nav--access-link-signup">Signup</a>
+                        <a href="#pop-up__signin" class="button header__nav--access-link header__nav--access-link-signin">Sign in</a>
+                    </div>
+                </ul>
+                
+            </nav>
+
+
+            
+            <div class="header__main">
+
+                
+                <div class="header__main--content">
+                    <h1 class="header__main--text">
+                        Find, book and rent a car in <span class="header__main--special-text">Easy</span> steps.
+                    </h1>
+                    <p class="header__main--paragraph">
+                        At any time you desire, you can safely acquire a car without experiencing any form of trouble.
+                    </p>
+        
+                    <div class="header__main--button">
+                        <a href="#" class="button header__main--button-apple">
+                            <img src="img/apple.png" alt="apple logo" class="header__main--button-logo">
+                            <p class="header__main--button-smalltext">Download on</p>
+                            <p class="header__main--button-bigtext">App Store</p>
+                        </a>
+        
+                        <a href="#" class="button header__main--button-google">
+                            <img src="img/playstore.png" alt="playstore logo" class="header__main--button-logo">
+                            <p class="header__main--button-smalltext">Download on</p>
+                            <p class="header__main--button-bigtext">Google Play</p>
+                        </a>
+                    </div>
+                </div>
+                
+
+                <div class="header__main--image-container">
+                    <img src="/img/benz-car-low.png" alt="Car" class="header__main--image">
+                </div>
+            </div>
+    
+            <div class="banner">
+                <form action="#" class="banner__form">
+
+                    <div class="row">
+                        <div class="col-1">
+
+                            <div class="banner__form--cell banner__form--vehicle">
+                                <label for="vehicle" class="banner__form--label">Car Brand</label>
+                                <input list="vehicle" class="banner__form--input big-bar" name="vehicle" placeholder="Ferrari" required>
+                                <datalist id="vehicle">
+                                    <option value="Toyota"></option>
+                                    <option value="Mercedes Benz"></option>
+                                    <option value="BMW"></option>
+                                    <option value="Mazda"></option>
+                                    <option value="Ford"></option>
+                                    <option value="Nissan"></option>
+                                    <option value="Lexus"></option>
+                                    <option value="Honda"></option>
+                                    <option value="Hyundai"></option>
+                                    <option value="Audi"></option>
+                                </datalist>
+            
+                            </div>
+                            
+                            <div class="banner__form--cell banner__form--location">
+                                <label for="location" class="banner__form--label">Location</label>
+                                <input type="text" class="banner__form--input big-bar" id="location" placeholder="Enter your location" required>
+                            </div>
+                            
+                            <div class="banner__form--cell banner__form--pickup">
+                                <label for="pickup" class="banner__form--label">Pickup date</label>
+                                <input type="date" class="banner__form--input small-bar" id="pickup" value="2023/06/01" min="2023/05/13" max="2023/12/31" required>
+                            </div>
+                            
+                            <div class="banner__form--cell banner__form--return">
+                                <label for="return" class="banner__form--label">Return date</label>
+                                <input type="date" class="banner__form--input small-bar" id="return" value="2023/07/01" min="2023/05/13" max="2023/12/31" required>
+                            </div>
+
+                        </div>
+
+                        <div class="col-2">
+                            <input type="submit" id="submit" class="button__submit">
+                            <label for="submit" class="button btn-blue">Search</label>
+                        </div>
+
+                    </div>
+                    
+                    
+                </form>
+            </div>
+        </section>
+
+        <div class="header__icon">
+            <img src="img/Nissan_Logo_2020.svg" alt="Nissan logo" class="header__icon--image">
+            <img src="img/mazda-silver-high .png" alt="Mazda logo" class="header__icon--image">
+            <img src="img/lexus.png" alt="Lexus logo" class="header__icon--image">
+            <img src="img/benz-high.png" alt="Benz logo" class="header__icon--image">
+            <img src="img/bmw-high.png" alt="BMW logo" class="header__icon--image">
+            <img src="img/honda-png-logo-32834.png" alt="Honda logo" class="header__icon--image">
+            <img src="img/ford-high.png" alt="Ford logo" class="header__icon--image">
+        </div>
+        
+    </div>
+
+    <section class="pop-up" id="pop-up__signin">
+        <div class="pop-up__sign-in">
+            <a href="#home" class="pop-up__close">&times;</a>
+            <h1 class="pop-up__heading">
+                Sign In
+            </h1>
+            <h3 class="pop-up__sub-heading">
+                Sign in to access your RentARide account
+            </h3>
+
+            <form action="#" method="post" class="pop-up__sign-in--form">
+                <input type="email" class="pop-up__input" placeholder="email" required>
+
+                <!-- <input type="submit" class="pop-up__submit" id="pop-up-submit"> -->
+                <!-- <label for="pop-up-submit" class="pop-up__submit--label">Continue</label> -->
+                <a href="#" class="pop-up__submit--label button">Continue</a>
+            </form>
+
+            <div class="pop-up__methods u-center-text">
+                <div class="pop-up__methods--dash"></div>
+                <p class="pop-up__methods--text">More Sign In Options</p>
+                <div class="pop-up__methods--dash"></div>    
+            </div>
+
+            <div class="pop-up__icons">
+                <a href="www.facebook.com"><img src="img/facebook-logo.png" alt="facebook"></a>
+                <a href="#"><img src="img/google-logo.png" alt="Gmail"></a>
+                <a href="#"><img src="img/wechat-logo.png" alt="wechat"></a>
+                <a href="www.twitter.com"><img src="img/twitter-logo.png" alt="twitter"></a>
+            </div>
+
+            <p class="pop-up__tandc">
+                By signing in or registering, you agree to the our <a href="#" class="pop-up__link">Terms and Conditions</a> and <a href="#" class="pop-up__link">Privacy Statement</a>.
+            </p>
+            
+
+        </div>
+    </section>
+
+    <section class="pop-up" id="pop-up__register">
+        <div class="pop-up__register">
+            <a href="#home" class="pop-up__close">&times;</a>
+            <h1 class="pop-up__heading">
+                Welcome to RentARide!
+            </h1>
+            <h3 class="pop-up__sub-heading">
+                Create An Account  To Get Started
+            </h3>
+
+            <form action="#" method="post" class="pop-up__sign-in--form">
+                <input type="email" class="pop-up__input" placeholder="email" required>
+
+                <!-- <input type="submit" class="pop-up__submit" id="pop-up-submit"> -->
+                <!-- <label for="pop-up-submit" class="pop-up__submit--label">Continue</label> -->
+                <a href="#" class="pop-up__submit--label button">Continue</a>
+            </form>
+
+            <div class="pop-up__methods">
+                <div class="pop-up__methods--dash"></div>
+                <p class="pop-up__methods--text">More Sign Up Options</p>
+                <div class="pop-up__methods--dash"></div>    
+            </div>
+
+            <div class="pop-up__icons">
+                <a href="www.facebook.com"><img src="img/facebook-logo.png" alt="facebook"></a>
+                <a href="#"><img src="img/google-logo.png" alt="Gmail"></a>
+                <a href="#"><img src="img/wechat-logo.png" alt="wechat"></a>
+                <a href="www.twitter.com"><img src="img/twitter-logo.png" alt="twitter"></a>
+            </div>
+
+            <p class="pop-up__tandc">
+                By signing in or registering, you agree to the our <a href="#" class="pop-up__link">Terms and Conditions</a> and <a href="#" class="pop-up__link">Privacy Statement</a>.
+            </p>
+        </div>
+    </section>
+
+    
+    <section class="intro u-margin-bottom-medium">
+        <div class="intro__content">
+            <h2 class="blue-heading">
+                How it works
+            </h2>
+            <h2 class="black-sub">
+                Rent a car with the following 3 steps
+            </h2>
+
+            <div class="intro__content--grid u-margin-bottom-bigsmall">
+                <div class="intro__content--column intro__content--column-1">
+                    <div class="intro__content--icon-container white u-margin-bottom-bigsmall">
+                        <img src="img/mapinn.png" alt="location icon" class="intro__content--column-icon">
+                    </div>
+                    <h6 class="intro__content--column-heading">
+                        Choose Location
+                    </h6>
+                    <p class="intro__content--column-sub">
+                        Choose your location and find your best car
+                    </p>
+                </div>
+
+                <div class="intro__content--bg-down">
+                    
+                </div>
+
+                <div class="intro__content--column intro__content--column-2">
+                    <div class="intro__content--icon-container blue u-margin-bottom-bigsmall">
+                        <img src="img/calender.png" alt="Calender icon" class="intro__content--column-icon">
+                    </div>
+                    <h6 class="intro__content--column-heading">
+                        Pick-up Date
+                    </h6>
+                    <p class="intro__content--column-sub">
+                        Select a Pickup date and time to book your car
+                    </p>
+                    
+                    
+                </div>
+
+                <div class="intro__content--bg-up">
+                    
+                </div>
+
+                <div class="intro__content--column intro__content--column-3">
+                    <div class="intro__content--icon-container white u-margin-bottom-bigsmall">
+                        <img src="img/carr.png" alt="car icon" class="intro__content--column-icon">
+                    </div>
+                    <h6 class="intro__content--column-heading">
+                        Book Your Car
+                    </h6>
+                    <p class="intro__content--column-sub">
+                        Book your car and we will deliver it promptly
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="details u-margin-bottom-medium">
+        <div class="details__content">
+            <img src="img/ford-focus.png" alt="Car" class="details__content--car">
+            <div class="details__content--text">
+                <div class="blue-heading">
+                    Why choose us
+                </div>
+                <div class="black-sub">
+                    Experience excellence with our rental deals.
+                </div>
+                
+                <div class="details__content--text-deals u-margin-bottom-bigsmall">
+                    <img src="img/todo.png" class="details__content--icon">
+                    <div class="details__content--text-section">
+                        <h6 class="details__content--text-section-heading">
+                            Flexible Rental Periods
+                        </h6>
+                        <p class="details__content--text-section-paragraph">
+                            We offer flexible rental periods, from daily to monthly rentals so you can choose the one that suits you.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="details__content--text-deals u-margin-bottom-bigsmall">
+                    <img src="img/pricetag.png" class="details__content--icon">
+                    <div class="details__content--text-section">
+                        <h6 class="details__content--text-section-heading">
+                            Competitive Pricing
+                        </h6>
+                        <p class="details__content--text-section-paragraph">
+                            We offer affordable and flexible pricing plans that are designed to meet your budget.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="details__content--text-deals u-margin-bottom-bigsmall">
+                    <img src="img/customersupport.png" class="details__content--icon">
+                    <div class="details__content--text-section">
+                        <h6 class="details__content--text-section-heading">
+                            Drivers Available
+                        </h6>
+                        <p class="details__content--text-section-paragraph">
+                            We also provide drivers if you don't want to drive, to ensure you have a seemless experience with us.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="details__content--text-deals">
+                    <img src="img/customersupport.png" class="details__content--icon">
+                    <div class="details__content--text-section">
+                        <h6 class="details__content--text-section-heading">
+                            Superior Customer Service
+                        </h6>
+                        <p class="details__content--text-section-paragraph">
+                            A team of knowledgeable and friendly professionals ready to support you with your concerns 24/7.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recommend u-margin-bottom-medium u-center-text u-max-width">
+        <h3 class="blue-heading u-center-text">
+            Popular rental deals
+        </h3>
+        <h2 class="black-sub u-center-text u-margin-bottom-medium">
+            The rental deals people choose
+        </h2>
+
+        <div class="recommend__card u-margin-bottom-bigsmall">
+            <div class="recommend__card--col">
+                <div class="recommend__card--side recommend__card--side-front">
+                    <div class="recommend__card--image recommend__card--image-one">&nbsp;</div>
+                    <div class="recommend__card--front-details">
+                        <h3 class="recommend__card--front-details-title">
+                            <span class="recommend__card--front-details-title-span recommend__card--front-details-title-span-one">Mercedes-Benz 2019</span>
+                        </h3>
+                        <ul class="recommend__card--list">
+                            <li>
+                                <img src="img/user.png" alt="User icon" class="recommend__card--icon">
+                                <p>4 Passengers</p>
+                            </li>
+                            <li>
+                                <img src="img/automation.png" alt="automation icon" class="recommend__card--icon">
+                                <p>Automatic</p>
+                            </li>
+                            <li>
+                                <img src="img/snowflake.png" alt="snowflake icon" class="recommend__card--icon">
+
+                                <p>Air Conditioning</p>
+                            </li>
+                            <li>
+                                <img src="img/car.png" alt="User icon" class="recommend__card--icon">
+                                <p>4 Doors</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recommend__card--side recommend__card--side-back recommend__card--side-back-one">
+                    <div class="recommend__card--cta">
+                        <p class="recommend__card--price">
+                            N80,000<span>/day</span>
+                        </p>
+                        <a href="#" class="recommend__card--cta-text u-text-blue btn-round">
+                            Rent Now
+                            <i class="recommend__card--cta-icon">&rarr;</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="recommend__card--col">
+                <div class="recommend__card--side recommend__card--side-front">
+                    <div class="recommend__card--image recommend__card--image-two">&nbsp;</div>
+                    <div class="recommend__card--front-details">
+                        <h3 class="recommend__card--front-details-title">
+                            <span class="recommend__card--front-details-title-span recommend__card--front-details-title-span-two">Mercedes-Benz 2019</span>
+                        </h3>
+                        <ul class="recommend__card--list">
+                            <li>
+                                <img src="img/user.png" alt="User icon" class="recommend__card--icon">
+                                <p>4 Passengers</p>
+                            </li>
+                            <li>
+                                <img src="img/gear-shift (1).png" alt="Manual icon" class="recommend__card--icon">
+                                <p>Manual</p>
+                            </li>
+                            <li>
+                                <img src="img/snowflake.png" alt="snowflake icon" class="recommend__card--icon">
+                                <p>Air Conditioning</p>
+                            </li>
+                            <li>
+                                <img src="img/car.png" alt="User icon" class="recommend__card--icon">
+                                <p>4 Doors</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recommend__card--side recommend__card--side-back recommend__card--side-back-two">
+                    <div class="recommend__card--cta">
+                        <p class="recommend__card--price">
+                            N80,000<span>/day</span>
+                        </p>
+                        <a href="#" class="recommend__card--cta-text btn-round">
+                            Rent Now
+                            <i class="recommend__card--cta-icon">&rarr;</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommend__card--col">
+                <div class="recommend__card--side recommend__card--side-front">
+                    <div class="recommend__card--image recommend__card--image-three">&nbsp;</div>
+                    <div class="recommend__card--front-details">
+                        <h3 class="recommend__card--front-details-title">
+                            <span class="recommend__card--front-details-title-span recommend__card--front-details-title-span-three">Mercedes-Benz 2019</span>
+                        </h3>
+                        <ul class="recommend__card--list">
+                            <li>
+                                <img src="img/user.png" alt="User icon" class="recommend__card--icon">
+                                <p>4 Passengers</p>
+                            </li>
+                            <li>
+                                <img src="img/gear-shift (1).png" alt="Manual icon" class="recommend__card--icon">
+                                <p>Manual</p>
+                            </li>
+                            <li>
+                                <img src="img/snowflake.png" alt="snowflake icon" class="recommend__card--icon">
+                                <p>Air Conditioning</p>
+                            </li>
+                            <li>
+                                <img src="img/car.png" alt="User icon" class="recommend__card--icon">
+                                <p>2 Doors</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recommend__card--side recommend__card--side-back recommend__card--side-back-three">
+                    <div class="recommend__card--cta">
+                        <p class="recommend__card--price">
+                            N80,000<span>/day</span>
+                        </p>
+                        <a href="#" class="recommend__card--cta-text btn-round">
+                            Rent Now
+                            <i class="recommend__card--cta-icon">&rarr;</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommend__card--col">
+                <div class="recommend__card--side recommend__card--side-front">
+                    <div class="recommend__card--image recommend__card--image-four">&nbsp;</div>
+                    <div class="recommend__card--front-details">
+                        <h3 class="recommend__card--front-details-title">
+                            <span class="recommend__card--front-details-title-span recommend__card--front-details-title-span-four">Mercedes-Benz 2019</span>
+                        </h3>
+                        <ul class="recommend__card--list">
+                            <li>
+                                <img src="img/user.png" alt="User icon" class="recommend__card--icon">
+                                <p>4 Passengers</p>
+                            </li>
+                            <li>
+                                <img src="img/automation.png" alt="automation icon" class="recommend__card--icon">
+                                <p>Automatic</p>
+                            </li>
+                            <li>
+                                <img src="img/snowflake.png" alt="snowflake icon" class="recommend__card--icon">
+                                <p>Air Conditioning</p>
+                            </li>
+                            <li>
+                                <img src="img/car.png" alt="User icon" class="recommend__card--icon">
+                                <p>2 Doors</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recommend__card--side recommend__card--side-back recommend__card--side-back-four">
+                    <div class="recommend__card--cta">
+                        <p class="recommend__card--price">
+                            N80,000<span>/day</span>
+                        </p>
+                        <a href="#" class="recommend__card--cta-text btn-round">
+                            Rent Now
+                            <i class="recommend__card--cta-icon">&rarr;</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="recommend__btn">See All Vehicles &rarr;</a>
+        
+    </section>
+
+    <section class="testimonials u-margin-bottom-medium u-center-text">
+        <h2 class="blue-heading">Testimonials</h3>
+        <h3 class="black-sub u-margin-bottom-bigsmall">What do our customers say about us?</h3>
+
+        <div class="card">
+            <div class="card__row">
+                <div class="card__col--1">
+                    <div class="card__image--container card__image--container-1">
+                        <!-- <img src="img/Brittney Barrett.jpg" alt="Photo" class="card__image"> -->
+                    </div>
+                    <p class="card__paragraph">
+                        "The car was really affordable. I requested for a driver, the driver was really helpful and polite, the car was clean, comfortable and worked fine. I had a great experience using their ride.I will definately refer my friends"
+                    </p>
+                    <h3 class="card__name">
+                        Brittney Barrett
+                    </h3>
+                    <h6 class="card__title">
+                        Co-founder at Kinside
+                    </h6>
+                </div>
+
+                <div class="card__col--1">
+                    <div class="card__image--container card__image--container-2">
+                        <!-- <img src="img/Brittney Barrett.jpg" alt="Photo" class="card__image"> -->
+                    </div>
+                    <p class="card__paragraph">
+                        "The car was really affordable. I requested for a driver, the driver was really helpful and polite, the car was clean, comfortable and worked fine. I had a great experience using their ride.I will definately refer my friends"
+                    </p>
+                    <h3 class="card__name">
+                        Jacob Jones
+                    </h3>
+                    <h6 class="card__title">
+                        Head of Sales at Drawboard
+                    </h6>
+                </div>
+
+                <div class="card__col--1">
+                    <div class="card__image--container card__image--container-3">
+                        <!-- <img src="img/Brittney Barrett.jpg" alt="Photo" class="card__image"> -->
+                    </div>
+                    <p class="card__paragraph">
+                        "The car was really affordable. I requested for a driver, the driver was really helpful and polite, the car was clean, comfortable and worked fine. I had a great experience using their ride.I will definately refer my friends"
+                    </p>
+                    <h3 class="card__name">
+                        Brittney Barrett
+                    </h3>
+                    <h6 class="card__title">
+                        Co-founder at Kinside
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe u-margin-bottom-medium">
+        <div class="subscribe__left">
+            <h2 class="subscribe__heading u-margin-bottom-small">Download RentARide App for free</h2>
+            <p class="subscribe__sub u-margin-bottom-bigsmall">For faster bookings and exclusive deals.</p>
+
+            <a href="#" class="button header__main--button-apple">
+                <img src="img/apple.png" alt="apple logo" class="header__main--button-logo">
+                <p class="header__main--button-smalltext">Download on</p>
+                <p class="header__main--button-bigtext">App Store</p>
+            </a>
+
+            <a href="#" class="button header__main--button-google">
+                <img src="img/playstore.png" alt="playstore logo" class="header__main--button-logo">
+                <p class="header__main--button-smalltext">Download on</p>
+                <p class="header__main--button-bigtext">Google Play</p>
+            </a>
+
+        </div>
+        <div class="subscribe__right">
+            
+        </div>
+
+    </section>
+
+    <section class="newsletter u-margin-bottom-medium u-center-text">
+        <h3 class="black-sub newsletter__heading">Subscribe For Any News Updates From RentARide</h3>
+        <form action="#" method="get">
+            <div class="newsletter__form u-margin-bottom-bigsmall">
+                <input type="email" placeholder="Enter Your Email" id="email" class="newsletter__form--input">
+                <label for="email" class="newsletter__form--label">Email</label>
+            </div>
+
+            <input type="submit" id="submit" class="button__submit">
+            <label for="submit" class="btn-subscribe button btn-blue">Subscribe</label>
+
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__contact-us">
+                <h2>RentARide</h2>
+                <p class="footer__contact-us--address">
+                    143, Bishop street, Lagos State, Nigeria
+                </p>
+                <a href="+2348118536771" class="footer__contact-us--phone"><img src="#" alt="Phone icon"></a>
+            </div>
+
+            <div class="footer__our-services">
+                <h3 class="footer__header">Our Services</h3>
+                <ul>
+                    <li>Car</li>
+                    <li>Career</li>
+                    <li>Packages</li>
+                    <li>Prices</li>
+                    <li>Safety</li>
+                </ul>
+            </div>
+
+            <div class="footer__support">
+                <h3 class="footer__header">Support</h3>
+                <ul>
+                    <li>Download</li>
+                    <li>Help Center</li>
+                    <li>Partner With Us</li>
+                    <li>FAQs</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+
+            <div class="footer__about">
+                <h3 class="footer__header">About RentARide</h3>
+                <ul>
+                    <li>Our Story</li>
+                    <li>Why Choose Us</li>
+                    <li>Advertise with us</li>
+                </ul>
+            </div>
+
+            <div class="footer__socials">
+                <h3 class="footer__header">Follow Us</h3>
+                <div class="footer__socials--icons">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

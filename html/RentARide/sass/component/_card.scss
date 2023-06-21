@@ -1,11 +1,11 @@
 .recommend__card {
     margin: 0 auto;
-    width: 80%;
     display: grid;
     grid-auto-flow: column;
-    gap: 2rem;
+    gap: 3rem;
     grid-auto-columns: 1fr;
     border: none;
+    max-width: 115rem;
 
 
     &--col {
@@ -39,7 +39,7 @@
             transform: rotateY(180deg);
 
             &-one {
-                background-image: linear-gradient(to left bottom, $color-white, $color-blue-dark);
+                background-image: linear-gradient(to bottom, $color-blue-dark, $color-blue-middi);
                 
             }
         }
@@ -59,11 +59,28 @@
         height: 45%;
         width: 100%;
         background-size: cover;
+        background-position: center;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &-one {
-            background-image: url(../img/benz-car-high.png), linear-gradient(to right bottom, $color-white 10%, $color-blue-dark 90%);
-        }  
+            background-image: url(../img/benz-car-high.png), linear-gradient(to right top, $color-blue-middi 10%, $color-blue-dark 90%);
+        }
+        
+        &-two {
+            // padding: 3rem;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+            background-image: url(../../img/porche.png), linear-gradient(to right top, $color-blue-middi 10%, $color-blue-dark 90%);
+        }
+        
+        
+        &-three {
+            background-image: url(../img/bmwcar.png), linear-gradient(to right top, $color-blue-middi 10%, $color-blue-dark 90%);
+        }
+        
+        &-four {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+            background-image: url(../../img/ford-focus.png), linear-gradient(to right top, $color-blue-middi 10%, $color-blue-dark 90%);
+        }
     }
 
     &--front-details {
@@ -71,7 +88,7 @@
 
         &-title {
             display: block;
-            width: 80%;
+            width: 70%;
             font-size: $font-medium;
             font-weight: 300;
             color: $color-white;
@@ -89,9 +106,21 @@
             box-decoration-break: clone;
             line-height: 1.7;
 
-            &-one {
-                background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark);
-            }
+                &-one {
+                    background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark);
+                }
+
+                &-two {
+                    background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark);
+                }
+
+                &-three {
+                    background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark);
+                }
+
+                &-four {
+                    background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark);
+                }
             }
         }
 
@@ -103,6 +132,8 @@
             li {
                 color: $color-blue-dark;
                 font-size: $font-mediumest;
+                display: flex;
+                justify-content: space-between;
 
                 &:not(:last-child) {
                     margin-bottom: 1rem;
@@ -122,6 +153,10 @@
 
             }
         }
+    }
+
+    &--icon {
+        width: 2rem;
     }
 
 
@@ -153,4 +188,75 @@
     }
 
 
+}
+
+.card {
+    margin: 0 auto;
+    max-width: 115rem;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+
+    &__row {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 3rem;
+    }
+
+    &__col {
+
+        &--1 {
+            width: 30rem;
+            box-shadow: 0 0 2rem 0 rgba($color-black, .3);
+            padding: 2rem 3rem;
+            border-radius: 5px;
+        }
+    }
+
+    &__image--container {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        // background-color: yellow;
+        background-size: cover;
+        background-position: center;
+        // border: 1px solid black;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+
+        &-1 {
+            background-image: url(../../img/BrittneyBarrett.jpg);
+        }
+        
+        &-2 {
+            background-image: url(../../img/jacobjones.jpg);
+
+        }
+
+        &-3 {
+            background-image: url(../../img/SharonPatil.jpg);
+
+        }
+    }
+
+    &__paragraph {
+        padding: 1rem 2rem;
+        font-size: $font-small;
+        font-weight: 500;
+        margin-bottom: 3rem;
+        font-style: italic;
+    }
+
+    &__name {
+        font-weight: 900;
+        color: $color-black;
+        margin-bottom: 1rem;
+        font-size: $font-medium;
+
+    }
+
+    &__title {
+        font-size: $font-mediumest;
+        color: $color-grey;
+
+    }
 }

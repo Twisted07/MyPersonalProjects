@@ -3,6 +3,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     @include clearfix;
 
@@ -25,33 +26,68 @@
 
 
 .intro__content {
-    &--row {
-        width: 100%;
-
-        @include clearfix;
+    &--grid {
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        gap: 5rem;
+        position: relative;
     }
 
     &--column {
         display: inline-block;
         width: 18rem;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 200;
 
-        &:not(:last-of-type) {
-            margin-right: 15vw;
-        }
 
         &-heading {
-            font-weight: 800;
-            text-align: center;
-            font-size: $font-small;
+            font-weight: 900;
+            font-size: $font-mediumest;
             color: $color-black;
+            margin-bottom: 1.5rem;
         }
 
         &-sub {
-            font-weight: 600;
-            font-size: $font-smaller;
+            font-weight: 500;
+            font-size: $font-small;
             color: $color-black;
-            text-align: center;
+            line-height: 1.7;
+        }
+
+        &-icon {
+            width: 4rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            z-index: 300;  
         }
     }
+
+    &--icon {
+        &-container {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 2rem;
+            box-shadow: 0 0rem 2rem 0 rgba($color-black, .3);
+            margin: 0 auto;
+            position: relative;
+
+            
+        }
+    }
+
+}
+
+.blue {
+    background-image: linear-gradient(to bottom, $color-blue-dark-2, $color-blue-light-2);
+}
+
+.white {
+    background-image: linear-gradient(to bottom, $color-white, $color-white);
 
 }
