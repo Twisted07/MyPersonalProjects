@@ -1,0 +1,57 @@
+.header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 2rem 0 rgba(black, .5);
+    padding: 2rem 0;
+}
+
+.business {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    &-logo {
+        //! display: inline-block
+    }
+    &-name {
+        //! display: inline-block;
+    }
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+    row-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.section {
+    &__list {
+        flex: 0 0 50%;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        font-size: $font-medium;
+    }
+
+    &__items {
+        display: inline-block;
+    }
+
+    &__link {
+        color: $color-purple-tertiary;
+
+    }
+
+
+}
+
+.socials {
+    flex: 1;
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+}

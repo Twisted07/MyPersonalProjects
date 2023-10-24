@@ -1,0 +1,17 @@
+.hero {
+    background-color: $color-purple-primary-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // ! TO BE REMOVED
+    height: 65rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+
+
+    &__text {
+        font-size: $font-xLarge;
+        color: $color-purple-tertiary;
+        font-weight: 500;
+    }
+}

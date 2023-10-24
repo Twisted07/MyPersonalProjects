@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    background-color: $color-purple-primary;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+

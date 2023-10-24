@@ -1,0 +1,16 @@
+.about {
+    margin: 3rem auto;
+    &__header {
+        font-size: $font-large;
+        color: $color-purple-tertiary;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    
+    &__article {
+        font-size: $font-middi;
+        color: white;
+        line-height: 2;
+
+    }
+}

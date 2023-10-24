@@ -1,0 +1,20 @@
+.section {
+    margin: 3rem auto;
+    margin-bottom: 10rem;
+    &__header {
+        font-size: $font-large;
+        color: $color-purple-tertiary;
+        margin-bottom: 3rem;
+        text-align: center;
+        display: block;
+    }
+}
+
+.product {
+    display: block;
+    &__name {
+        font-size: $font-middi;
+        font-weight: 600;
+        color: $color-purple-tertiary;
+    }
+}
