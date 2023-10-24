@@ -51,9 +51,10 @@ button:hover {
 
 .header-section {
     background-color: var(--color-less-important);
-    padding: 2rem 5rem;
+    padding: 1rem 5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -89,7 +90,7 @@ button:hover {
 }
 
 .socials__icon {
-
+    width: 3rem;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////// */
@@ -185,10 +186,12 @@ button:hover {
     width: 15rem;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 1rem   ;
+    padding: 1rem;
+    
+    position: relative;
 }
 
-.card__image {
+.card__image--container {
     height: 4rem;
     margin-bottom: 1rem;
 }
@@ -208,6 +211,11 @@ button:hover {
     border: none;
     border-radius: 5px;
     padding: .5rem 1rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
 }
 
 .btn-container {
@@ -240,7 +248,7 @@ button:hover {
 }
 
 .booking__icons {
-
+    width: 10rem;
 }
 
 
