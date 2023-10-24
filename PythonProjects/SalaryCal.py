@@ -13,23 +13,22 @@ def f(data):
 
     return data
 
-hrs = input("\nHow many hours did you work this month? \n")
-rate = input("What is the pay rate per hour? \n")
-fhrs = f(hrs)
-frate = f(rate)
+fhrs = f(input("\nHow many hours did you work this month? \n"))
+frate = f(input("What is the pay rate per hour? \n"))
+fmaxhrs = f(input("What is the maximum number of hours a worker should work? \n"))
 
 try:
-    if (fhrs > 300):
+    if (fhrs > fmaxhrs):
         print("\nYou worked overtime!")
-        ovt = ((fhrs - 300) * (frate * 0.5)) + (300 * frate)
+        ovt = ((fhrs - fmaxhrs) * (frate * 0.5)) + (fmaxhrs * frate)
         print(f"\nYour pay for this month is {ovt}\n")
 
-    elif (fhrs == 300):
+    elif (fhrs == fmaxhrs):
         print("\nYou were very effective this month!\n")
         pay = (fhrs * frate)
         print(f"Your pay for this month is {pay}\n")
 
-    elif (fhrs < 300):
+    elif (fhrs < fmaxhrs):
         print("\nYou have done well this month. You can do better next month to get a higher pay.")
         lpay = (fhrs * frate)
         print(f"\nYour pay for this month is {lpay}\n")
