@@ -29,7 +29,7 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
 ul {
@@ -50,7 +50,7 @@ button:hover {
 
 
 .header-section {
-    background-color: var(--color-less-important);
+    background-color: white;
     padding: 1rem 5rem;
     display: flex;
     justify-content: space-between;
@@ -58,7 +58,7 @@ button:hover {
 }
 
 .logo {
-    /* justify-content: flex-start; */
+    width: 10rem;
 }
 
 .nav__bar {
@@ -115,7 +115,11 @@ button:hover {
 }
 
 .hero__button {
-
+    padding: 1rem 3rem;
+    border-radius: 7px;
+    border: none;
+    font-size: var(--font-small);
+    color: var(--color-important);
 }
 
 
