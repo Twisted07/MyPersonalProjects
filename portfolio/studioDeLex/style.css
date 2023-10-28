@@ -49,6 +49,7 @@ button:hover {
 }
 
 
+
 .header-section {
     background-color: white;
     padding: 1rem 5rem;
@@ -103,7 +104,7 @@ button:hover {
     flex-direction: column;
 
     /* ! Temporary fix */
-    height: 20rem;
+    height: 40rem;
 }
 
 .hero__header {
@@ -138,7 +139,7 @@ button:hover {
 .about__image {
     flex: 0 0 40%;
     background-color: var(--color-important);
-    height: 10rem;
+    height: 30rem;
 }
 
 .about__text {
@@ -167,7 +168,7 @@ button:hover {
 }
 
 .service__subsection {
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 5rem auto;
     width: 80%;
 }
 
@@ -188,6 +189,7 @@ button:hover {
 
 .card {
     width: 15rem;
+    height: 15rem;
     border: 1px solid black;
     border-radius: 5px;
     padding: 1rem;
@@ -203,6 +205,8 @@ button:hover {
 .card__title {
     font-size: var(--font-small);
     font-weight: var(--font-weight-mid);
+    position: absolute;
+    bottom: 1rem;
 }
 
 .card__details {
@@ -229,7 +233,7 @@ button:hover {
 .view-more {
     background-color: var(--color-less-important);
     padding: 1rem 5rem;
-    border: 2px solid black;
+    border: none;
     border-radius: 7px;   
 }
 /* ///////////////////////////////////////////////////////////////////////////// */
