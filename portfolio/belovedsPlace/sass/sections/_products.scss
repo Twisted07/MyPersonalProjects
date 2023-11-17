@@ -18,3 +18,41 @@
         color: $color-purple-tertiary;
     }
 }
+
+.jewelry {
+    &-1 {
+        background-image: url(../../img/product-images/leather-earring.jpeg);
+    }
+
+    &-2 {
+        background-image: url(../../img/product-images/black-earring.jpeg);
+    }
+
+    &-3 {
+        background-image: url(../../img/product-images/leather-love-earring.jpeg);
+    }
+
+    &-4 {
+        background-image: url(../../img/product-images/wooden-earrings.jpeg);
+    }
+
+    &-5 {
+        background-image: url(../../img/product-images/rocklike-earrings.jpeg);
+    }
+
+    &-6 {
+        background-image: url(../../img/product-images/love-earrings.jpeg);
+    }
+
+    &-7 {
+        background-image: url(../../img/product-images/butterfly-necklace.jpeg);
+    }
+
+    &-8 {
+        background-image: url(../../img/product-images/xupping-statement-earring.jpeg);
+    }
+
+    &-9 {
+        background-image: url(../../img/product-images/infinity-necklace.jpeg);
+    }
+}

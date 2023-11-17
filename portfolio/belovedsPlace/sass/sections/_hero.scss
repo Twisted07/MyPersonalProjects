@@ -1,5 +1,10 @@
 .hero {
-    background-color: $color-purple-primary-light;
+    background-image:
+    linear-gradient(to right bottom, rgba($color-purple-secondary, .7), rgba($color-purple-tertiary, .7)),
+    url(/img/product-images/bow-earrings.jpeg);
+
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +16,7 @@
 
     &__text {
         font-size: $font-xLarge;
-        color: $color-purple-tertiary;
+        color: $color-white;
         font-weight: 500;
     }
 }

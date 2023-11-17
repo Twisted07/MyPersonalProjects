@@ -1,15 +1,16 @@
 .card {
     margin: 3rem auto;
-    width: 20rem;
+    width: 30rem;
     border-radius: 3px;
     border: 2px dotted $color-purple-tertiary;
     // ! TO BE REMOVED
-    height: 30rem;
+    // height: 30rem;
 
     &__container {
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 1fr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         gap: 3rem;
         margin-bottom: 5rem;
     }
@@ -22,8 +23,9 @@
 
     &__image {
         width: 100%;
-        height: 80%;
-        background-image: linear-gradient(to bottom, $color-purple-secondary, $color-purple-primary);
+        height: 30rem;
+       background-position: center;
+       background-size: cover;
     }
 }
 
