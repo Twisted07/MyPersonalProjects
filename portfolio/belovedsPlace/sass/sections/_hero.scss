@@ -13,10 +13,15 @@
     height: 65rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 
+    @include responsive(phone) {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    }
+
 
     &__text {
         font-size: $font-xLarge;
         color: $color-white;
         font-weight: 500;
+        text-align: center;
     }
 }

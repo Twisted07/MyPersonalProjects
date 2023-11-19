@@ -16,6 +16,8 @@
         font-size: $font-middi;
         font-weight: 600;
         color: $color-purple-tertiary;
+        margin-bottom: 2rem;
+        text-align: center;
     }
 }
 
@@ -54,5 +56,42 @@
 
     &-9 {
         background-image: url(../../img/product-images/infinity-necklace.jpeg);
+    }
+}
+
+.wig {
+    &-1 {
+        background-image: url(/img/product-images/short-wig.jpeg);
+    }
+
+    &-2 {
+        background-image: url(/img/product-images/dyed-curled-wig.jpeg);
+    }
+}
+
+
+.hair-making {
+    &-1 {
+        background-image: url(/img/product-images/knotless-braids-with-curls-1.jpeg);
+    }
+
+    &-2 {
+        background-image: url(/img/product-images/passion-twist.jpeg);
+    }
+    
+    &-3 {
+        background-image: url(/img/product-images/Bohemian-braids.jpeg);
+    }
+
+    &-4 {
+
+    }
+
+    &-5 {
+
+    }
+
+    &-6 {
+
     }
 }

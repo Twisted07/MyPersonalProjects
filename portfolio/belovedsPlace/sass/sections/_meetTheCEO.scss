@@ -6,26 +6,39 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 5rem;
+        flex-direction: row;
 
         background-color: rgba($color-purple-secondary, 0.9);
         border-radius: 5rem;
         padding: 3rem;
+        
+        // @include responsive(phone) {
+        //     flex-direction: column-reverse;
+        // }
     }
 
     &__text {
-        flex: 0 0 60%;
+        flex: 1;
         color: white;
         font-size: $font-middi;
         line-height: 2;
+        // @include responsive(phone) {
+        //     flex: none;   
+        // }
     }
 
     &__image {
-        flex: 1;
+        flex: 0 0 40%;
         width: 30rem;
         height: 50rem;
         background-image: url(../../img/product-images/beloved.jpeg);
         background-position: center;
         background-size: cover;
         border-radius: 50%;
+
+        @include responsive(phone) {
+            height: 40rem;    
+        }
+        
     }
 }

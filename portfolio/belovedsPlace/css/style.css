@@ -5,6 +5,18 @@
 
 html {
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.23em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
 
 body {
   width: 100%;
@@ -18,10 +30,12 @@ main {
   margin: 0 auto; }
 
 .card {
-  margin: 3rem auto;
   width: 30rem;
   border-radius: 3px;
   border: 2px dotted #431c52; }
+  @media (max-width: 37.5em) {
+    .card {
+      width: 40rem; } }
   .card__container {
     display: flex;
     justify-content: center;
@@ -29,6 +43,9 @@ main {
     flex-wrap: wrap;
     gap: 3rem;
     margin-bottom: 5rem; }
+    @media (max-width: 75em) {
+      .card__container {
+        gap: 3rem; } }
   .card__title {
     color: #431c52;
     font-size: 1.6rem;
@@ -38,6 +55,9 @@ main {
     height: 30rem;
     background-position: center;
     background-size: cover; }
+    @media (max-width: 37.5em) {
+      .card__image {
+        height: 40rem; } }
 
 .about {
   margin: 3rem auto; }
@@ -60,46 +80,47 @@ main {
   text-align: center; }
   .footer__text {
     font-size: 2rem; }
+  .footer__logo {
+    fill: black;
+    width: 5rem;
+    height: 2rem; }
 
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
   width: 100%;
   background-color: white;
   box-shadow: 0 2px 2rem 0 rgba(0, 0, 0, 0.5);
   padding: 2rem 0; }
 
-.business {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 1rem; }
-
 .nav-bar {
+  padding: 0 3rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   column-gap: 5rem;
-  row-gap: 2rem;
-  margin-top: 2rem; }
+  row-gap: 2rem; }
 
 .section__list {
-  flex: 0 0 50%;
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
   font-size: 1.6rem; }
 
 .section__items {
   display: inline-block; }
+  .section__items:not(:last-of-type) {
+    margin-right: 5rem; }
 
 .section__link {
   color: #431c52; }
 
-.socials {
-  flex: 1;
-  display: flex;
-  column-gap: 2rem;
-  justify-content: center; }
+.socials__link:not(:last-of-type) {
+  margin-right: 2rem; }
+
+.socials__icon {
+  fill: purple;
+  width: 3rem;
+  height: 3rem; }
 
 .hero {
   background-image: linear-gradient(to right bottom, rgba(130, 91, 151, 0.7), rgba(67, 28, 82, 0.7)), url(/img/product-images/bow-earrings.jpeg);
@@ -110,10 +131,14 @@ main {
   align-items: center;
   height: 65rem;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); }
+  @media (max-width: 37.5em) {
+    .hero {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%); } }
   .hero__text {
     font-size: 4rem;
     color: white;
-    font-weight: 500; }
+    font-weight: 500;
+    text-align: center; }
 
 .ceo__container {
   display: flex;
@@ -121,24 +146,28 @@ main {
   align-items: center;
   flex-wrap: wrap;
   gap: 5rem;
+  flex-direction: row;
   background-color: rgba(130, 91, 151, 0.9);
   border-radius: 5rem;
   padding: 3rem; }
 
 .ceo__text {
-  flex: 0 0 60%;
+  flex: 1;
   color: white;
   font-size: 2rem;
   line-height: 2; }
 
 .ceo__image {
-  flex: 1;
+  flex: 0 0 40%;
   width: 30rem;
   height: 50rem;
   background-image: url(../../img/product-images/beloved.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 50%; }
+  @media (max-width: 37.5em) {
+    .ceo__image {
+      height: 40rem; } }
 
 .section {
   margin: 3rem auto;
@@ -155,7 +184,9 @@ main {
   .product__name {
     font-size: 2rem;
     font-weight: 600;
-    color: #431c52; }
+    color: #431c52;
+    margin-bottom: 2rem;
+    text-align: center; }
 
 .jewelry-1 {
   background-image: url(../../img/product-images/leather-earring.jpeg); }
@@ -183,6 +214,21 @@ main {
 
 .jewelry-9 {
   background-image: url(../../img/product-images/infinity-necklace.jpeg); }
+
+.wig-1 {
+  background-image: url(/img/product-images/short-wig.jpeg); }
+
+.wig-2 {
+  background-image: url(/img/product-images/dyed-curled-wig.jpeg); }
+
+.hair-making-1 {
+  background-image: url(/img/product-images/knotless-braids-with-curls-1.jpeg); }
+
+.hair-making-2 {
+  background-image: url(/img/product-images/passion-twist.jpeg); }
+
+.hair-making-3 {
+  background-image: url(/img/product-images/Bohemian-braids.jpeg); }
 
 .review__container {
   display: flex;

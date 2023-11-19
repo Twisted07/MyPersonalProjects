@@ -16,30 +16,51 @@
 
 
     <header class="header">
-        <div class="business">
-            <img src="#" alt="Beloved Logo" class="business-logo">
+        <!-- <div class="business">
             <h1 class="business-name">Beloved's Hair And Accessories</h1>
-        </div>
+        </div> -->
         <nav class="nav-bar">
+            <img src="#" alt="Beloved Logo" class="business-logo">
             <ul class="section__list">
                 <li class="section__items"><a href="#about" class="section__link">About Us</a></li>
                 <li class="section__items"><a href="#products" class="section__link"> Products And Services</a></li>
                 <li class="section__items"><a href="#reviews" class="section__link">Reviews</a></li>
                 <li class="section__items"><a href="#meet-the-ceo" class="section__link">Meet our CEO</a></li>
             </ul>
+
+
             <div class="socials">
-                <a href="#" class="socials__link"><img src="#" alt="Phone" class="socials__icon"></a>
-                <a href="#" class="socials__link"><img src="#" alt="Whatsapp" class="socials__icon"></a>
-                <a href="#" class="socials__link"><img src="#" alt="Instagram" class="socials__icon"></a>
-                <a href="#" class="socials__link"><img src="#" alt="Email" class="socials__icon"></a>
-                <a href="#" class="socials__link"><img src="#" alt="Ticktok" class="socials__icon"></a>
+                <a href="#" class="socials__link">
+                    <svg class="socials__icon">
+                        <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
+                </a>
+
+                <a href="#" class="socials__link">
+                    <svg class="socials__icon">
+                        <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+                    </svg>
+                </a>
+
+                <a href="#" class="socials__link">
+                    <svg class="socials__icon">
+                        <use xlink:href="img/sprite.svg#icon-instagram-with-circle"></use>
+                    </svg>
+                </a>
+
+                <a href="#" class="socials__link">
+                    <svg class="socials__icon">
+                        <use xlink:href="img/sprite.svg#icon-mail4"></use>
+                    </svg>
+                </a>
+
+
             </div>    
         </nav>
     </header>
 
     <main class="main">
-        <section class="hero" id="hero">
-            <!-- <img src="#" alt="Hero Image" class="hero__image"> -->
+        <section class="hero section" id="hero">
             <h1 class="hero__text">Your beauty, our expertise.</h1>
         </section>
 
@@ -157,19 +178,40 @@
                 <h2 class="product__name">HAIR MAKING</h2>
                 <div class="card__container">
                     <div class="card">
-                        <div class="card__image">
+                        <div class="card__image hair-making-1">
+                            <a href="#" class="btn-card">View Image</a>
+                        </div>
+                        <h3 class="card__title">Knotless Braids With Curls</h3>
+                    </div>
+                    <div class="card">
+                        <div class="card__image hair-making-2">
+                            <a href="#" class="btn-card">View Image</a>
+                        </div>
+                        <h3 class="card__title">Passion Twist</h3>
+                    </div>
+                    <div class="card">
+                        <div class="card__image hair-making-3">
+                            <a href="#" class="btn-card">View Image</a>
+                        </div>
+                        <h3 class="card__title">Bohemian Braids</h3>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image hair-making-4">
                             <a href="#" class="btn-card">View Image</a>
                         </div>
                         <h3 class="card__title">card title</h3>
                     </div>
+
                     <div class="card">
-                        <div class="card__image">
+                        <div class="card__image hair-making-5">
                             <a href="#" class="btn-card">View Image</a>
                         </div>
                         <h3 class="card__title">card title</h3>
                     </div>
+
                     <div class="card">
-                        <div class="card__image">
+                        <div class="card__image hair-making-6">
                             <a href="#" class="btn-card">View Image</a>
                         </div>
                         <h3 class="card__title">card title</h3>
@@ -183,19 +225,19 @@
                 <h2 class="product__name">WIG MAKING</h2>
                 <div class="card__container">
                     <div class="card">
-                        <div class="card__image">
+                        <div class="card__image wig-1">
                             <a href="#" class="btn-card">View Image</a>
                         </div>
-                        <h3 class="card__title">card title</h3>
+                        <h3 class="card__title">Short Wig</h3>
                     </div>
                     <div class="card">
-                        <div class="card__image">
+                        <div class="card__image wig-2">
                             <a href="#" class="btn-card">View Image</a>
                         </div>
-                        <h3 class="card__title">card title</h3>
+                        <h3 class="card__title">Dyed Curled Wig</h3>
                     </div>
                     <div class="card">
-                        <div class="card__image">
+                        <div class="card__image wig-3">
                             <a href="#" class="btn-card">View Image</a>
                         </div>
                         <h3 class="card__title">card title</h3>
@@ -325,7 +367,9 @@
 
     <footer class="footer">
         <h3 class="footer__text">Powered by:</h3>
-        <img src="#" alt="Twisted Logo" class="footer__logo">
+        <!-- <img src="#" alt="Twisted Logo" class="footer__logo"> -->
+        
+
     </footer>
 
     <script src="script.js"></script>
