@@ -32,7 +32,7 @@ main {
 .card {
   width: 30rem;
   border-radius: 3px;
-  border: 2px dotted #431c52; }
+  border: 2px dotted purple; }
   @media (max-width: 37.5em) {
     .card {
       width: 40rem; } }
@@ -47,7 +47,7 @@ main {
       .card__container {
         gap: 3rem; } }
   .card__title {
-    color: #431c52;
+    color: purple;
     font-size: 1.6rem;
     text-align: center; }
   .card__image {
@@ -63,18 +63,18 @@ main {
   margin: 3rem auto; }
   .about__header {
     font-size: 3rem;
-    color: #431c52;
+    color: purple;
     margin-bottom: 3rem;
     text-align: center; }
   .about__article {
     font-size: 2rem;
-    color: #431c52;
+    color: purple;
     line-height: 2; }
 
 .footer {
   width: 100%;
   margin: 0 auto;
-  background-color: #431c52;
+  background-color: purple;
   color: white;
   padding: 3rem 5rem;
   text-align: center; }
@@ -90,7 +90,7 @@ main {
   top: 0;
   z-index: 100;
   width: 100%;
-  background-color: white;
+  background-color: purple;
   box-shadow: 0 2px 2rem 0 rgba(0, 0, 0, 0.5);
   padding: 2rem 0; }
 
@@ -112,18 +112,19 @@ main {
     margin-right: 5rem; }
 
 .section__link {
-  color: #431c52; }
+  color: white; }
 
 .socials__link:not(:last-of-type) {
   margin-right: 2rem; }
 
 .socials__icon {
-  fill: purple;
-  width: 3rem;
-  height: 3rem; }
+  fill: white;
+  width: 2.4rem;
+  height: 2.4rem; }
 
 .hero {
-  background-image: linear-gradient(to right bottom, rgba(130, 91, 151, 0.7), rgba(67, 28, 82, 0.7)), url(/img/product-images/bow-earrings.jpeg);
+  margin-top: 10rem !important;
+  background-image: linear-gradient(to right bottom, rgba(141, 91, 151, 0.7), rgba(128, 0, 128, 0.7)), url(/img/product-images/bow-earrings.jpeg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -147,7 +148,9 @@ main {
   flex-wrap: wrap;
   gap: 5rem;
   flex-direction: row;
-  background-color: rgba(130, 91, 151, 0.9);
+  background-image: linear-gradient(to bottom, rgba(128, 0, 128, 0.8), rgba(128, 0, 128, 0.8)), url(/img/product-images/wooden-earrings.jpeg);
+  background-position: center;
+  background-size: cover;
   border-radius: 5rem;
   padding: 3rem; }
 
@@ -174,17 +177,18 @@ main {
   margin-bottom: 10rem; }
   .section__header {
     font-size: 3rem;
-    color: #431c52;
+    color: purple;
     margin-bottom: 3rem;
     text-align: center;
     display: block; }
 
 .product {
   display: block; }
-  .product__name {
+  .product__category {
+    text-transform: uppercase;
     font-size: 2rem;
     font-weight: 600;
-    color: #431c52;
+    color: purple;
     margin-bottom: 2rem;
     text-align: center; }
 

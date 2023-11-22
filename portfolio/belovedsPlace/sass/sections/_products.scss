@@ -12,7 +12,8 @@
 
 .product {
     display: block;
-    &__name {
+    &__category {
+        text-transform: uppercase;
         font-size: $font-middi;
         font-weight: 600;
         color: $color-purple-tertiary;
